@@ -1,0 +1,237 @@
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-30%); 
+  transition: all 1s;
+}
+
+.visible {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0); 
+  transition: all 1s;
+}
+
+.itemBox:nth-child(2) {
+  transition-delay: 200ms;
+}
+.itemBox:nth-child(3) {
+  transition-delay: 400ms;
+}
+.button:nth-child(2) {
+  transition-delay: 300ms;
+}
+.button:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.brandExplanation.hidden {
+  transform: translateX(50%); 
+}
+.brandExplanation {
+  transition-delay: 200ms;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: calc(var(--column-change) - 80px);
+  margin: auto;
+  padding-top: 40px;
+  @media (max-width: 1080px) {
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+  }
+}
+
+.image {
+  width: 300px;
+  margin: 0 0 40px 0;
+}
+
+.image .title, .image .p {
+  text-align: center;
+}
+
+.image .title {
+  font-size: 2.0rem;
+  font-weight: 400;
+  color: red;
+}
+.image .p {
+  font-size: 1.0rem;
+  line-height: 1.5;
+}
+
+.title {
+  font-size: 2.0rem;
+  font-weight: 400;
+}
+
+.description {
+  font-size: 1.0rem;
+  margin: 24px 0 0 24px;
+  line-height: 1.75;
+}
+
+.competitionDescriptions {
+  display: flex;
+  margin: auto;
+  padding: 24px;
+  justify-content: space-between;
+  width: 100%;
+  @media (max-width: 1080px) {
+    overflow-x: scroll;
+    justify-self: unset;
+    width: 400px;
+    scroll-snap-type: x mandatory;
+  }
+}
+
+.competitionDescriptions .itemBox {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px white;
+  width: 300px;
+  min-width: 300px;
+  height: 400px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40px 0 40px 0;
+  margin: 0 0 40px 0;
+
+  @media (max-width: 1080px) {
+    margin: 0 40px 0 0;
+    scroll-snap-align: center;
+  }
+}
+
+.competitionDescriptions .itemBox .image {
+  width: 80%;
+  margin: 0 0 40px 0;
+  height: 100px;
+}
+
+.competitionDescriptions .itemBox .title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0 0 24px 0;
+}
+
+.competitionDescriptions .itemBox .description {
+  font-size: 1.0rem;
+  line-height: 1.75;
+  margin: 0 0 24px 0;
+}
+
+.competitionDescriptions .itemBox ul.description {
+  list-style-position: inside;
+  list-style-type: decimal;
+  text-indent: -18px;
+}
+
+.competitionDescriptions .itemBox .description li {
+  line-height: 1.5;
+  margin: 3px;
+}
+
+.button {
+  display: flex;
+  width: 200px;
+  margin: 0 20px;
+  padding: 1em 2em;
+  margin-top: 2rem;
+  justify-content: center;
+
+  border-radius: 0;
+  border: 2px solid rgb(255, 255, 255);
+
+  text-align: center;
+	color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 1.0rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+	background: linear-gradient(to right, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 1) 75%);
+	background-position: 1% 50%;
+	background-size: 400% 300%;
+	
+	transition: 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  cursor: pointer;
+  transition-delay: 200ms;
+}
+
+.button.moreInfo {
+  border: 2px solid rgba(233, 0, 19, 1);
+  color: rgba(233, 0, 19, 1);
+  background: linear-gradient(to right, rgba(233, 0, 19, 0) 25%, rgba(233, 0, 19, 1) 75%);
+  background-position: 1% 50%;
+	background-size: 400% 300%;
+}
+
+.button:hover{
+  color: black;
+  background-position: 99% 50%;
+  transition: 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.button.moreInfo:hover {
+  color: white;
+}
+
+.button:before,
+.button:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  width: clamp(400px, 100%, 1000px);
+  margin: auto;
+  padding: 40px 0 40px 0;
+}
+
+.brandExplanationContainer {
+  display: flex;
+  justify-content: space-between;
+  width: calc(var(--column-change) - 80px);
+  margin: auto;
+  padding-top: 40px;
+  @media (max-width: 1080px) {
+    flex-direction: column;
+    width: 60%;
+    min-width: 400px;
+    align-items: center;
+  }
+}
+
+.brandExplanationContainer .p {
+  font-size: 1.0rem;
+  line-height: 1.75;
+  margin: 0 0 24px 0;
+}
+
+.brandExplanationContainer .p .red {
+  color: rgba(233, 0, 19, 1);
+}
+
+.downArrow {
+  position: absolute;
+  left: 50%;
+  bottom: 2%;
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.section3Container {
+  padding-top: 5vw;
+}
