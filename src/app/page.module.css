@@ -12,59 +12,6 @@
   transition: all 1s;
 }
 
-.itemBox:nth-child(2) {
-  transition-delay: 200ms;
-}
-.itemBox:nth-child(3) {
-  transition-delay: 400ms;
-}
-.button:nth-child(2) {
-  transition-delay: 300ms;
-}
-.button:nth-child(3) {
-  transition-delay: 400ms;
-}
-
-.brandExplanation.hidden {
-  transform: translateX(50%); 
-}
-.brandExplanation {
-  transition-delay: 200ms;
-}
-
-.imageContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: calc(var(--column-change) - 80px);
-  margin: auto;
-  padding-top: 40px;
-  @media (max-width: 1080px) {
-    flex-direction: column;
-    width: 60%;
-    align-items: center;
-  }
-}
-
-.image {
-  width: 300px;
-  margin: 0 0 40px 0;
-}
-
-.image .title, .image .p {
-  text-align: center;
-}
-
-.image .title {
-  font-size: 2.0rem;
-  font-weight: 400;
-  color: red;
-}
-.image .p {
-  font-size: 1.0rem;
-  line-height: 1.5;
-}
-
 .title {
   font-size: 2.0rem;
   font-weight: 400;
@@ -76,17 +23,71 @@
   line-height: 1.75;
 }
 
+.expandedMobileHeight {
+  @media (max-width: 720px) {
+    height: 120vh;
+  }
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 40px;
+  overflow-y: hidden;
+  width: 100%;
+  min-width: 300px;
+  @media (max-width: 1080px) {
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+  }
+}
+
+.imageContainer .image {
+  width: 300px;
+  margin: 0 0 40px 0;
+}
+
+.imageContainer .image .title {
+  text-align: center;
+  font-size: 2.0rem;
+  font-weight: 400;
+  color: red;
+}
+.imageContainer .image .p {
+  text-align: center;
+  font-size: 1.0rem;
+  line-height: 1.5;
+}
+.imageContainer .image:nth-child(2) {
+  transition-delay: 50ms;
+}
+.imageContainer .image:nth-child(3) {
+  transition-delay: 200ms;
+}
+
+.brandExplanation.hidden {
+  transform: translateX(50%); 
+}
+
+.brandExplanation {
+  transition-delay: 200ms;
+}
+
 .competitionDescriptions {
   display: flex;
   margin: auto;
-  padding: 24px;
+  padding: 24px 64px 24px 64px;
   justify-content: space-between;
   width: 100%;
   @media (max-width: 1080px) {
     overflow-x: scroll;
+    overflow-y: hidden;
     justify-self: unset;
-    width: 400px;
+    min-width: 300px;
     scroll-snap-type: x mandatory;
+    padding: 24px 0 24px 0;
   }
 }
 
@@ -103,118 +104,177 @@
   margin: 0 0 40px 0;
 
   @media (max-width: 1080px) {
-    margin: 0 40px 0 0;
-    scroll-snap-align: center;
+    margin: 0 0 0 10px;
+    scroll-snap-align: start;
   }
+}
+
+.competitionDescriptions::-webkit-scrollbar {
+  display: none;
 }
 
 .competitionDescriptions .itemBox .image {
   width: 80%;
-  margin: 0 0 40px 0;
-  height: 100px;
+  margin: 0 0 20px 0;
 }
 
-.competitionDescriptions .itemBox .title {
+.competitionDescriptions .itemBox .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.competitionDescriptions .itemBox .content .title {
   font-size: 1.5rem;
   font-weight: 400;
   margin: 0 0 24px 0;
 }
 
-.competitionDescriptions .itemBox .description {
+.competitionDescriptions .itemBox .content .description {
   font-size: 1.0rem;
   line-height: 1.75;
   margin: 0 0 24px 0;
 }
 
-.competitionDescriptions .itemBox ul.description {
+.competitionDescriptions .itemBox .content ul.description {
   list-style-position: inside;
   list-style-type: decimal;
   text-indent: -18px;
 }
 
-.competitionDescriptions .itemBox .description li {
+.competitionDescriptions .itemBox .content .description li {
   line-height: 1.5;
   margin: 3px;
 }
 
-.button {
-  display: flex;
-  width: 200px;
-  margin: 0 20px;
-  padding: 1em 2em;
-  margin-top: 2rem;
-  justify-content: center;
-
-  border-radius: 0;
-  border: 2px solid rgb(255, 255, 255);
-
-  text-align: center;
-	color: rgb(255, 255, 255);
-  font-weight: bold;
-  font-size: 1.0rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-
-	background: linear-gradient(to right, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 1) 75%);
-	background-position: 1% 50%;
-	background-size: 400% 300%;
-	
-	transition: 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
-  cursor: pointer;
-  transition-delay: 200ms;
-}
-
-.button.moreInfo {
-  border: 2px solid rgba(233, 0, 19, 1);
-  color: rgba(233, 0, 19, 1);
-  background: linear-gradient(to right, rgba(233, 0, 19, 0) 25%, rgba(233, 0, 19, 1) 75%);
-  background-position: 1% 50%;
-	background-size: 400% 300%;
-}
-
-.button:hover{
-  color: black;
-  background-position: 99% 50%;
-  transition: 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.button.moreInfo:hover {
-  color: white;
-}
-
-.button:before,
-.button:after {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.buttonContainer {
-  display: flex;
-  justify-content: center;
-  width: clamp(400px, 100%, 1000px);
+.competitionDescriptions .itemBox .content a {
+  color: rgba(255, 0, 0, 0.676);
   margin: auto;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: block;
+  bottom: 30px;
+  position: absolute;
+}
+
+.imageContainer .itemBox {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  min-width: 300px;
+  height: 200px;
+  justify-content: flex-start;
+  align-items: center;
   padding: 40px 0 40px 0;
+  margin: 0 0 40px 0;
+}
+
+.itemContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 1080px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.itemContainer .divider {
+  height: 300px;
+  border: solid 1px white;
+
+  @media (max-width: 1080px) {
+    width: 80%;
+    height: 0;
+  }
+}
+
+.itemContainer .itemBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 40px auto auto auto;
+  width: 100%;
+}
+
+.itemContainer .itemBox .title {
+  font-size: 3.5rem;
+  text-align: center;
+  margin: 0 0 36px 0;
+
+  @media (max-width: 1080px) {
+    font-size: 2.5rem;
+    margin: auto auto 24px 80px;
+  }
+}
+
+.itemContainer .itemBox .description {
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 0 0 24px 0;
+
+  @media (max-width: 1080px) {
+    font-size: 1.2rem;
+    margin: 0 80px 24px auto;
+  }
+}
+
+.section3Container .title {
+  margin-bottom: 30px;
+}
+.section3Container .buttonContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  margin-bottom: 40px;
+
+  @media (max-width: 720px) {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+}
+
+.section3Container .buttonContainer .button {
+  margin: 0 20px 0 20px;
+  @media (max-width: 720px) {
+    margin: 4px 0 0 0;
+  }
 }
 
 .brandExplanationContainer {
   display: flex;
-  justify-content: space-between;
-  width: calc(var(--column-change) - 80px);
+  justify-content: center;
   margin: auto;
   padding-top: 40px;
+  width: 100%;
   @media (max-width: 1080px) {
     flex-direction: column;
-    width: 60%;
-    min-width: 400px;
     align-items: center;
+  }
+}
+
+.brandExplanationContainer .image {
+  width: 300px;
+  margin: 0 0 40px 0;
+  @media (max-width: 1080px) {
+    display: block;
+    margin: 0 auto 40px auto;
   }
 }
 
 .brandExplanationContainer .p {
   font-size: 1.0rem;
   line-height: 1.75;
-  margin: 0 0 24px 0;
+  margin: 0 0 0 100px;
+  @media (max-width: 1080px) {
+    margin: 0;
+  }
 }
 
 .brandExplanationContainer .p .red {
@@ -223,15 +283,41 @@
 
 .downArrow {
   position: absolute;
-  left: 50%;
-  bottom: 2%;
+  left: calc(50% - 20px);
+  bottom: 0;
   width: 60px;
   height: 60px;
   margin: auto;
   align-items: center;
   justify-content: center;
+  @media (max-width: 1080px) {
+    display: none;
+  }
 }
 
 .section3Container {
   padding-top: 5vw;
+}
+
+.itemBox:nth-child(2) {
+  transition-delay: 200ms;
+}
+.itemBox:nth-child(3) {
+  transition-delay: 400ms;
+}
+.button:nth-child(2) {
+  transition-delay: 300ms;
+}
+.button:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.itemContainer .itemBox:nth-child(1) {
+  transition-delay: 200ms;
+}
+.itemContainer .itemBox:nth-child(3) {
+  transition-delay: 300ms;
+}
+.itemContainer .itemBox:nth-child(5) {
+  transition-delay: 400ms;
 }
