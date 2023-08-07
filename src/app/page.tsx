@@ -204,7 +204,7 @@ export default function Home() {
         </div>
         <a className={styles.downArrow} href='#competition-detail2' ref={addChildRef(3)}><DownArrowSVG /></a>
       </section>
-      <section className={`${styles.section} ${styles.expandedMobileHeight}`} ref={addSectionRef} id="competition-detail2">
+      <div className={`${styles.expandedMobileHeight}`} ref={addSectionRef} id="competition-detail2">
         <div className={styles.section3Container}>
           <div className={styles.title} ref={addChildRef(4)}>
             TOMPED SPECTACLE DESIGN COMPETITION
@@ -266,7 +266,7 @@ export default function Home() {
           </div>
         </div>
         <a className={styles.downArrow} href='#requirements' ref={addChildRef(4)}><DownArrowSVG /></a>
-      </section>
+      </div>
       <section className={styles.section+" "+styles.setRequirementSectionMinHeight} ref={addSectionRef} id="requirements">
         <a className={styles.downArrow} href='#apply' ref={addChildRef(5)}><DownArrowSVG /></a>
         <div className={styles.requirementsContainer}>
@@ -396,10 +396,10 @@ export default function Home() {
         </div>
         <a className={`${styles.downArrow} ${styles.hidden}`} href='#price' ref={addChildRef(7)}><DownArrowSVG /></a>
       </section>
-      <section className={`${styles.section} ${styles.expandedHeight} ${styles.expandedMobileHeight2}`} id="price">
+      <section className={`${styles.section} ${styles.expandedMobileHeight2}`} id="price">
         <div className={styles.pageview}>
-          <div className={styles.pageContainer} ref={addSectionRef}>
-            <div className={`${styles.titleContainer} ${styles.hidden}`} ref={addChildRef(8)}>
+          <div className={styles.pageContainer}>
+            <div className={`${styles.titleContainer}`}>
               <div className={styles.imageContainer}>
                 <Image src="/images/price/top3price.png" alt="1" width={500} height={500} layout="responsive"></Image>
               </div>
@@ -407,7 +407,7 @@ export default function Home() {
                   Top 1-3 ICOSA 아이코사 상
               </div>
             </div>
-            <div className={`${styles.descriptionContainer} ${styles.hidden}`} ref={addChildRef(8)}>
+            <div className={`${styles.descriptionContainer}`}>
               <div className={styles.descriptionBox}>
                 <div className={styles.subtitle}>
                   2D 부문 ICOSA 혜택
@@ -419,7 +419,7 @@ export default function Home() {
                   <li>각 수상자에게 톰글래스 스토어에서 원하는 제품 1개 증정</li>
                   <li>출품된 디자인이 입혀진 머그컵 증정 [by Conteenew]</li>
                   <div className={styles.examplebutton}>
-                    <Button href='https://vrin.co.kr/guide/ko' target="_blank" rel="noopener noreferrer" style={{width: 230}}>3D 이미지 예시 (VRIN)</Button>
+                    <Button href='https://vrin.co.kr/guide/ko' target="_blank" rel="noopener noreferrer" style={{width: 230}}>&nbsp;3D 이미지 예시 (VRIN)</Button>
                   </div>
                 </ul>
               </div>
@@ -439,8 +439,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className={styles.pageContainer} ref={addSectionRef}>
-            <div className={`${styles.titleContainer} ${styles.hidden}`} ref={addChildRef(9)}>
+          <div className={styles.pageContainer}>
+            <div className={`${styles.titleContainer}`}>
               <div className={styles.imageContainer}>
                 <Image src="/images/price/top12price.png" alt="1" width={500} height={500} layout="responsive"></Image>
               </div>
@@ -448,7 +448,7 @@ export default function Home() {
                   Top 4-12 OCTA 옥타 상
               </div>
             </div>
-            <div className={`${styles.descriptionContainer} ${styles.hidden}`} ref={addChildRef(9)}>
+            <div className={`${styles.descriptionContainer}`}>
               <div className={styles.descriptionBox}>
                 <div className={styles.subtitle}>
                   2D 부문 OCTA 혜택

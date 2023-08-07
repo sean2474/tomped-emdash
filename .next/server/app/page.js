@@ -693,8 +693,8 @@ function Home() {
                     })
                 ]
             }),
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
-                className: `${(page_module_default()).section} ${(page_module_default()).expandedMobileHeight}`,
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                className: `${(page_module_default()).expandedMobileHeight}`,
                 ref: addSectionRef,
                 id: "competition-detail2",
                 children: [
@@ -1295,7 +1295,7 @@ function Home() {
                 ]
             }),
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
-                className: `${(page_module_default()).section} ${(page_module_default()).expandedHeight} ${(page_module_default()).expandedMobileHeight2}`,
+                className: `${(page_module_default()).section} ${(page_module_default()).expandedMobileHeight2}`,
                 id: "price",
                 children: [
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
@@ -1303,11 +1303,9 @@ function Home() {
                         children: [
                             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                 className: (page_module_default()).pageContainer,
-                                ref: addSectionRef,
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                        className: `${(page_module_default()).titleContainer} ${(page_module_default()).hidden}`,
-                                        ref: addChildRef(8),
+                                        className: `${(page_module_default()).titleContainer}`,
                                         children: [
                                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                 className: (page_module_default()).imageContainer,
@@ -1326,8 +1324,7 @@ function Home() {
                                         ]
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                        className: `${(page_module_default()).descriptionContainer} ${(page_module_default()).hidden}`,
-                                        ref: addChildRef(8),
+                                        className: `${(page_module_default()).descriptionContainer}`,
                                         children: [
                                             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                                 className: (page_module_default()).descriptionBox,
@@ -1363,7 +1360,7 @@ function Home() {
                                                                     style: {
                                                                         width: 230
                                                                     },
-                                                                    children: "3D 이미지 예시 (VRIN)"
+                                                                    children: "\xa03D 이미지 예시 (VRIN)"
                                                                 })
                                                             })
                                                         ]
@@ -1411,11 +1408,9 @@ function Home() {
                             }),
                             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                 className: (page_module_default()).pageContainer,
-                                ref: addSectionRef,
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                        className: `${(page_module_default()).titleContainer} ${(page_module_default()).hidden}`,
-                                        ref: addChildRef(9),
+                                        className: `${(page_module_default()).titleContainer}`,
                                         children: [
                                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                 className: (page_module_default()).imageContainer,
@@ -1434,8 +1429,7 @@ function Home() {
                                         ]
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                        className: `${(page_module_default()).descriptionContainer} ${(page_module_default()).hidden}`,
-                                        ref: addChildRef(9),
+                                        className: `${(page_module_default()).descriptionContainer}`,
                                         children: [
                                             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                                 className: (page_module_default()).descriptionBox,
@@ -1529,7 +1523,6 @@ module.exports = {
 	"visible": "page_visible__NlJV_",
 	"title": "page_title__3jonF",
 	"description": "page_description__86bsR",
-	"expandedHeight": "page_expandedHeight__YDE3b",
 	"expandedMobileHeight": "page_expandedMobileHeight__4iaW6",
 	"titleMinHeight": "page_titleMinHeight__4JK9o",
 	"imagesContainer": "page_imagesContainer__2zlI9",

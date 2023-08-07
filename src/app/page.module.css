@@ -23,16 +23,17 @@
   line-height: 1.75;
 }
 
-.expandedHeight {
-  height: 110vh;
-  @media (max-width: 1080px) {
-    height: 120vh;
-  }
-}
-
 .expandedMobileHeight {
+  height: 100vh;
+  padding: 5vh 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
   @media (max-width: 720px) {
-    min-height: 950px;
+    min-height: 1200px;
   }
 }
 
@@ -654,7 +655,10 @@
 }
 
 .expandedMobileHeight2 {
-  border: solid 1px white;
+  height: 110vh;
+  @media (max-width: 1080px) {
+    height: 120vh;
+  }
   min-height: 900px;
   @media (max-width: 1000px) {
     min-height: 1760px;
@@ -666,8 +670,6 @@
   }
   @media (max-width: 374px) {
     min-height: 2060px;
-    justify-content: flex-start;
-    padding: 0;
   }
 }
 
@@ -705,7 +707,7 @@
   @media (max-width: 600px) {
     display: flex;
     justify-content: center;
-    margin: auto;
+    margin: 10px auto auto auto;
     width: 100%;
   }
 }
