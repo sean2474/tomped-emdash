@@ -377,7 +377,9 @@
 }
 
 .setRequirementSectionMinHeight {
-  min-height: 950px;
+  @media (max-width: 1000px) {
+    min-height: 950px;
+  }
 }
 
 .requirementsContainer {
