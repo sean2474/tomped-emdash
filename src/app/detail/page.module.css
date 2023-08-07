@@ -36,13 +36,13 @@
   margin: auto;
   align-items: center;
   justify-content: center;
-  animation: scrollAnimation 2s linear infinite;
+  animation: arrowAnimation 2s linear infinite;
   @media (max-width: 1080px) {
     display: none;
   }
 }
 
-@keyframes scrollAnimation {
+@keyframes arrowAnimation {
   0% { transform: translateY(-5px); }
   50% { transform: translateY(5px); }
   100% { transform: translateY(-5px); }
