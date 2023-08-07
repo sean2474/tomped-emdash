@@ -76,7 +76,7 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <section className={styles.section} ref={addSectionRef} id="title">
+      <section className={`${styles.section} ${styles.expandedMobileHeight}`} ref={addSectionRef} id="title">
         <div className={styles.imageContainer}>
           <div className={`${styles.image} ${styles.hidden}`} ref={addChildRef(0)}>
             <Image src="/images/content-1.jpg" alt="poster" width={500} height={500} layout="responsive"></Image>
@@ -95,7 +95,10 @@ export default function Home() {
           <a className={styles.downArrow} href='#brand-explain' ref={addChildRef(0)}>
             <DownArrowSVG />
           </a>
-      </div>
+        </div>
+        <div className={`${styles.posterButton} ${styles.hidden}`} ref={addChildRef(0)}>
+          <Button href='/poster'>포스터 보기</Button>
+        </div>
       </section>
       <section className={styles.section} ref={addSectionRef} id="brand-explain"> 
         <div className={styles.brandExplanationContainer}>
@@ -104,17 +107,17 @@ export default function Home() {
           </div>
           <div className={styles.brandExplanation} ref={addChildRef(1)}>
             <div className={styles.p}>
-              어려운 시기에도 자신만의 길을 찾아내어 살아가는 사람 <br />
-              다른 사람의 기준보다 내 자신의 기준이 중요한 사람 <br />
-              겉으로 보여지는 것보다 내면의 가치를 보려고 하는 사람
+              <p>어려운 시기에도 자신만의 길을 찾아내어 살아가는 사람</p>
+              <p>다른 사람의 기준보다 내 자신의 기준이 중요한 사람 </p>
+              <p>겉으로 보여지는 것보다 내면의 가치를 보려고 하는 사람</p>
             </div>
             <div className={styles.p}>
-              <span className={styles.red}>오늘도 자신의 삶을 그려가는 모두가 TOM 입니다.</span>
+              <p><span className={styles.red}>오늘도 자신의 삶을 그려가는 모두가 TOM 입니다.</span></p>
             </div>
             <div className={styles.p}>
-              톰 글래스는 평범하지만 개성을 가진,<br />
-              자신만의 소신이 살아있는,<br />
-              그런 TOM의 길을 함께 하고자 하는 마음에서 시작되었습니다.
+              <p>톰 글래스는 평범하지만 개성을 가진,</p>
+              <p>자신만의 소신이 살아있는,</p>
+              <p>그런 TOM의 길을 함께 하고자 하는 마음에서 시작되었습니다.</p>
             </div>
           </div>
         </div>

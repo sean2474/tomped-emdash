@@ -309,9 +309,6 @@ export default function Home() {
         <a className={`${styles.prevButton}`}onClick={handlePrev}><DownArrowSVG /></a>
         <a className={`${styles.nextButton}`} onClick={handleNext}><DownArrowSVG /></a>
       </section>
-      <div className={styles.poster} id="poster">
-        <Image src="/images/poster.jpg" alt="poster" width={500} height={500} layout="responsive"></Image>
-      </div>
     </main>
   )
 }
