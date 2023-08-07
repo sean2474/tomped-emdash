@@ -20,7 +20,7 @@
 }
 
 .expandedMobileHeight {
-  @media (max-width: 720px) {
+  @media (max-width: 1000px) {
     height: 280vh;
     justify-content: flex-start;
     padding: 0;
@@ -343,7 +343,7 @@
   overflow-y: hidden;
   justify-self: unset;
   scroll-snap-type: x mandatory;
-  @media (max-width: 600px) {
+  @media (max-width: 1000px) {
     justify-content: start;
     overflow-y: hidden;
     flex-direction: column;
@@ -366,7 +366,7 @@
   padding: 40px 0 40px 0;
   margin: 0 100px 0 0;
   scroll-snap-align: center;
-  @media (max-width: 600px) {
+  @media (max-width: 1000px) {
     justify-content: start;
     width: 100%;
   }
@@ -379,7 +379,7 @@
   align-items: center;
   padding: 0 40px 0 40px;
   margin: 0 0 40px 0;
-  @media (max-width: 600px) {
+  @media (max-width: 1000px) {
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -390,7 +390,7 @@
 .pageview .pageContainer .titleContainer .imageContainer {
   width: 540px;
   margin: 0;
-  @media (max-width: 600px) {
+  @media (max-width: 720px) {
     width: 100%;
   }
 }
@@ -400,8 +400,12 @@
   font-weight: 700;
   margin: 0 0 24px 0;
   transform: rotate(90deg) translate(0, 300%);
-  @media (max-width: 600px) {
+  @media (max-width: 1000px) {
     transform: none;
+    font-size: 5vw;
+  }
+  @media (max-width: 1000px) {
+    transform: 1.4rem;
   }
   @media (max-width: 320px) {
     font-size: 1.2rem;
@@ -415,7 +419,10 @@
   width: 100%;
   margin: auto;
   padding: 0 40px 0 40px;
-  @media (max-width: 600px) {
+  @media (max-width: 1000px) {
+    align-items: space-between;
+  }
+  @media (max-width: 720px) {
     flex-direction: column;
     align-items: center;
     padding: 0;
@@ -428,7 +435,7 @@
   line-height: 1.75;
   margin: 0;
   width: 450px;
-  @media (max-width: 600px) {
+  @media (max-width: 1000px) {
     display: block;
     text-align: start;
     width: 100%;
@@ -442,9 +449,13 @@
   list-style-position: inside;
   list-style-type: decimal;
   text-indent: -18px;
-  @media (max-width: 600px) {
+  @media (max-width: 1000px) {
     display: block;
     width: 300px;
+    padding-right: 20px;
+    margin: 14px auto 24px auto;
+  }
+   @media (max-width: 720px) {
     margin: 14px auto 24px auto;
   }
   @media (max-width: 374px) {
@@ -471,7 +482,7 @@
   width: 60px;
   height: 60px;
   transition-delay: 200ms;
-  @media (max-width: 600px) {
+  @media (max-width: 1000px) {
     display: none;
   }
 }
@@ -488,7 +499,7 @@
   width: 60px;
   height: 60px;
   transition-delay: 200ms;
-  @media (max-width: 600px) {
+  @media (max-width: 1000px) {
     display: none;
   }
 }
