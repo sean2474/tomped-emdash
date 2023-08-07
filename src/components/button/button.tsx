@@ -1,7 +1,7 @@
 import styles from './button.module.css';
 
-export const Button = ({ children, href, className, onClick, download } : {
-  children: React.ReactNode, href?: string, className?: string, onClick?: () => void, download?: string
+export const Button = ({ children, href, className, onClick, download, target, rel, style } : {
+  children: React.ReactNode, href?: string, className?: string, onClick?: () => void, download?: string, target?: string, rel ?: string, style ?: React.CSSProperties
 }) => {
   return (
     <a 
@@ -9,14 +9,17 @@ export const Button = ({ children, href, className, onClick, download } : {
       href={href} 
       onClick={onClick} 
       download={download}
+      target={target}
+      rel={rel}
+      style={style}
     >
       {children} 
     </a>
   );
 }
 
-export const RedButton = ({ children, href, className, onClick, download } : {
-  children: React.ReactNode, href?: string, className?: string, onClick?: () => void, download?: string
+export const RedButton = ({ children, href, className, onClick, download, target, rel } : {
+  children: React.ReactNode, href?: string, className?: string, onClick?: () => void, download?: string, target?: string, rel ?: string
 }) => {
   return (
     <a 
@@ -24,6 +27,8 @@ export const RedButton = ({ children, href, className, onClick, download } : {
       href={href} 
       onClick={onClick} 
       download={download}
+      target={target}
+      rel={rel}
     >
       {children} 
     </a>

@@ -2,8 +2,9 @@
 .button {
   display: flex;
   width: 200px;
-  padding: 1em 2em;
+  height: 70px;
   justify-content: center;
+  align-items: center;
 
   border-radius: 0;
   border: 2px solid rgb(255, 255, 255);

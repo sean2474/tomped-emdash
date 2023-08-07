@@ -284,28 +284,79 @@ __webpack_require__.r(__webpack_exports__);
 /***/ 800:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3813))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4073))
 
 /***/ }),
 
-/***/ 3813:
+/***/ 4073:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Home)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6786);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2451);
-/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _page_module_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(1395);
-/* harmony import */ var _page_module_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_page_module_css__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8038);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_svg_downArrowSVG__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5785);
-/* harmony import */ var _components_button_button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2581);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ Home)
+});
+
+// EXTERNAL MODULE: external "next/dist/compiled/react/jsx-runtime"
+var jsx_runtime_ = __webpack_require__(6786);
+// EXTERNAL MODULE: ./node_modules/next/image.js
+var next_image = __webpack_require__(2451);
+var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
+// EXTERNAL MODULE: ./src/app/page.module.css
+var page_module = __webpack_require__(1395);
+var page_module_default = /*#__PURE__*/__webpack_require__.n(page_module);
+// EXTERNAL MODULE: external "next/dist/compiled/react"
+var react_ = __webpack_require__(8038);
+;// CONCATENATED MODULE: ./src/components/svg/downArrowSVG.tsx
+
+function DownArrowSVG() {
+    return /*#__PURE__*/ jsx_runtime_.jsx("svg", {
+        width: "40",
+        height: "40",
+        viewBox: "-6 -9 12 10",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        children: /*#__PURE__*/ jsx_runtime_.jsx("path", {
+            d: "M1-1 5-5C6-6 5-7 4-6L1-3C0-2 0-2-1-3L-4-6C-5-7-6-6-5-5L-1-1C0 0 0 0 1-1",
+            fill: "currentColor"
+        })
+    });
+}
+
+// EXTERNAL MODULE: ./src/components/button/button.module.css
+var button_module = __webpack_require__(4043);
+var button_module_default = /*#__PURE__*/__webpack_require__.n(button_module);
+;// CONCATENATED MODULE: ./src/components/button/button.tsx
+
+
+const Button = ({ children, href, className, onClick, download, target, rel, style })=>{
+    return /*#__PURE__*/ jsx_runtime_.jsx("a", {
+        className: `${(button_module_default()).button} ${className}`,
+        href: href,
+        onClick: onClick,
+        download: download,
+        target: target,
+        rel: rel,
+        style: style,
+        children: children
+    });
+};
+const RedButton = ({ children, href, className, onClick, download, target, rel })=>{
+    return /*#__PURE__*/ jsx_runtime_.jsx("a", {
+        className: `${(button_module_default()).red} ${(button_module_default()).button} ${className}`,
+        href: href,
+        onClick: onClick,
+        download: download,
+        target: target,
+        rel: rel,
+        children: children
+    });
+};
+
+;// CONCATENATED MODULE: ./src/app/page.tsx
 /* __next_internal_client_entry_do_not_use__ default auto */ 
 
 
@@ -313,7 +364,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Home() {
-    const childRefs = (0,react__WEBPACK_IMPORTED_MODULE_2__.useRef)([]);
+    const childRefs = (0,react_.useRef)([]);
     const addChildRef = (index)=>{
         return (el)=>{
             if (!childRefs.current[index]) {
@@ -324,30 +375,30 @@ function Home() {
             }
         };
     };
-    const sectionRefs = (0,react__WEBPACK_IMPORTED_MODULE_2__.useRef)([]);
+    const sectionRefs = (0,react_.useRef)([]);
     const addSectionRef = (el)=>{
         if (el && !sectionRefs.current.includes(el)) {
             sectionRefs.current.push(el);
         }
     };
     const checkBenefit = ()=>{
-        location.href = "/detail#price";
+        location.href = "#price";
     };
     const checkJudgeCiteria = ()=>{
-        location.href = "/detail#judgement";
+        location.href = "#judgement";
     };
     const checkApplication = ()=>{
-        location.href = "/detail#apply";
+        location.href = "#apply";
     };
-    (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(()=>{
+    (0,react_.useEffect)(()=>{
         let observer = new IntersectionObserver((entries)=>{
             entries.forEach((entry)=>{
                 if (entry.isIntersecting) {
                     sectionRefs.current.forEach((sectionRef)=>{
                         if (sectionRef === entry.target) {
                             if (childRefs.current[sectionRefs.current.indexOf(sectionRef)] !== undefined) childRefs.current[sectionRefs.current.indexOf(sectionRef)].forEach((el)=>{
-                                if (el.classList.contains((_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().hidden))) el.classList.remove((_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().hidden));
-                                el.classList.add((_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().visible));
+                                if (el.classList.contains((page_module_default()).hidden)) el.classList.remove((page_module_default()).hidden);
+                                el.classList.add((page_module_default()).visible);
                             });
                         }
                     });
@@ -355,8 +406,8 @@ function Home() {
                     sectionRefs.current.forEach((sectionRef)=>{
                         if (sectionRef === entry.target) {
                             if (childRefs.current[sectionRefs.current.indexOf(sectionRef)] !== undefined) childRefs.current[sectionRefs.current.indexOf(sectionRef)].forEach((el)=>{
-                                if (el.classList.contains((_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().visible))) el.classList.remove((_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().visible));
-                                el.classList.add((_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().hidden));
+                                if (el.classList.contains((page_module_default()).visible)) el.classList.remove((page_module_default()).visible);
+                                el.classList.add((page_module_default()).hidden);
                             });
                         }
                     });
@@ -372,21 +423,55 @@ function Home() {
             observer.disconnect();
         };
     }, []);
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("main", {
-        className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().main),
+    const handleNext = ()=>{
+        const pageview = document.querySelector("." + (page_module_default()).pageview);
+        if (pageview) {
+            const newScrollPosition = pageview.scrollLeft + pageview.clientWidth;
+            pageview.scrollTo({
+                left: newScrollPosition,
+                behavior: "smooth"
+            });
+        }
+    };
+    const handlePrev = ()=>{
+        const pageview = document.querySelector("." + (page_module_default()).pageview);
+        if (pageview) {
+            const newScrollPosition = pageview.scrollLeft - pageview.clientWidth;
+            pageview.scrollTo({
+                left: newScrollPosition,
+                behavior: "smooth"
+            });
+        }
+    };
+    const textToCopy = "우리 1005404327510";
+    const [copySuccess, setCopySuccess] = (0,react_.useState)("");
+    const handleCopy = async ()=>{
+        try {
+            await navigator.clipboard.writeText(textToCopy);
+            setCopySuccess("Copied to clipboard!");
+            setTimeout(()=>setCopySuccess(""), 1000);
+        } catch (err) {
+            setCopySuccess("Failed to copy!");
+            setTimeout(()=>setCopySuccess(""), 1000);
+        }
+    };
+    const gridImageWidth = 220;
+    const gridImageHeight = 220;
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("main", {
+        className: (page_module_default()).main,
         children: [
-            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("section", {
-                className: `${(_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().section)} ${(_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().expandedMobileHeight)}`,
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
+                className: `${(page_module_default()).section} ${(page_module_default()).titleMinHeight}`,
                 ref: addSectionRef,
                 id: "title",
                 children: [
-                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                        className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().imageContainer),
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: (page_module_default()).imagesContainer,
                         children: [
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: `${(_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().image)} ${(_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().hidden)}`,
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: `${(page_module_default()).image} ${(page_module_default()).hidden}`,
                                 ref: addChildRef(0),
-                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
                                     src: "/images/content-1.jpg",
                                     alt: "poster",
                                     width: 500,
@@ -394,24 +479,24 @@ function Home() {
                                     layout: "responsive"
                                 })
                             }),
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: `${(_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().image)} ${(_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().hidden)}`,
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: `${(page_module_default()).image} ${(page_module_default()).hidden}`,
                                 ref: addChildRef(0),
                                 children: [
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                        className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().title),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (page_module_default()).title,
                                         children: "TOMPED"
                                     }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                        className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().p),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (page_module_default()).p,
                                         children: "TOM GLASS  및 EMDASH 사가 주최하는 TOMPED 국제 공모전은 고등학생 및 대학생들을 위해 TOM GLASS 임원진들을 필두로 우수한 작품들을 선발하고 이에 대한 심사평을 제공하는 대회입니다."
                                     })
                                 ]
                             }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: `${(_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().image)} ${(_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().hidden)}`,
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: `${(page_module_default()).image} ${(page_module_default()).hidden}`,
                                 ref: addChildRef(0),
-                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
                                     src: "/images/content-2.jpg",
                                     alt: "poster",
                                     width: 500,
@@ -419,36 +504,36 @@ function Home() {
                                     layout: "responsive"
                                 })
                             }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().downArrow),
+                            /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                className: (page_module_default()).downArrow,
                                 href: "#brand-explain",
                                 ref: addChildRef(0),
-                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_svg_downArrowSVG__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {})
+                                children: /*#__PURE__*/ jsx_runtime_.jsx(DownArrowSVG, {})
                             })
                         ]
                     }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: `${(_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().posterButton)} ${(_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().hidden)}`,
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: `${(page_module_default()).posterButton} ${(page_module_default()).hidden}`,
                         ref: addChildRef(0),
-                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_button_button__WEBPACK_IMPORTED_MODULE_4__/* .Button */ .z, {
+                        children: /*#__PURE__*/ jsx_runtime_.jsx(Button, {
                             href: "/poster",
                             children: "포스터 보기"
                         })
                     })
                 ]
             }),
-            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("section", {
-                className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().section),
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
+                className: (page_module_default()).section,
                 ref: addSectionRef,
                 id: "brand-explain",
                 children: [
-                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                        className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().brandExplanationContainer),
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: (page_module_default()).brandExplanationContainer,
                         children: [
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().image),
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: (page_module_default()).image,
                                 ref: addChildRef(1),
-                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
                                     src: "/images/icons/main-icon.png",
                                     alt: "poster",
                                     width: 500,
@@ -456,43 +541,43 @@ function Home() {
                                     layout: "responsive"
                                 })
                             }),
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().brandExplanation),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: (page_module_default()).brandExplanation,
                                 ref: addChildRef(1),
                                 children: [
-                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                        className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().p),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: (page_module_default()).p,
                                         children: [
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                                 children: "어려운 시기에도 자신만의 길을 찾아내어 살아가는 사람"
                                             }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                                 children: "다른 사람의 기준보다 내 자신의 기준이 중요한 사람 "
                                             }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                                 children: "겉으로 보여지는 것보다 내면의 가치를 보려고 하는 사람"
                                             })
                                         ]
                                     }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                        className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().p),
-                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().red),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (page_module_default()).p,
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                className: (page_module_default()).red,
                                                 children: "오늘도 자신의 삶을 그려가는 모두가 TOM 입니다."
                                             })
                                         })
                                     }),
-                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                        className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().p),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: (page_module_default()).p,
                                         children: [
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                                 children: "톰 글래스는 평범하지만 개성을 가진,"
                                             }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                                 children: "자신만의 소신이 살아있는,"
                                             }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                                 children: "그런 TOM의 길을 함께 하고자 하는 마음에서 시작되었습니다."
                                             })
                                         ]
@@ -501,288 +586,932 @@ function Home() {
                             })
                         ]
                     }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                        className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().downArrow),
+                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                        className: (page_module_default()).downArrow,
                         href: "#competition-explain",
                         ref: addChildRef(1),
-                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_svg_downArrowSVG__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {})
+                        children: /*#__PURE__*/ jsx_runtime_.jsx(DownArrowSVG, {})
                     })
                 ]
             }),
-            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("section", {
-                className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().section),
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
+                className: (page_module_default()).section,
                 ref: addSectionRef,
                 id: "competition-explain",
                 children: [
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().title),
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: (page_module_default()).title,
                         ref: addChildRef(2),
                         children: "MPED INT'L ART&DESIGN AWARDS"
                     }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().description),
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: (page_module_default()).description,
                         ref: addChildRef(2),
                         children: "MPED 국제 아트앤디자인 공모전은 전 세계 학생 아티스트들의 우수함과 독창성을 주목하며 찬양합니다. 예술적 열정과 탐구심 그리고 정진력(精進力)을 기반으로 한 작품들을 선정하며 이를 국제 무대에 선보일 수 있는 플랫폼을 제공합니다. TOMPED SPECTACLE DESIGN COMPETITION"
                     }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                        className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().downArrow),
+                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                        className: (page_module_default()).downArrow,
                         href: "#competition-detail1",
                         ref: addChildRef(2),
-                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_svg_downArrowSVG__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {})
+                        children: /*#__PURE__*/ jsx_runtime_.jsx(DownArrowSVG, {})
                     })
                 ]
             }),
-            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("section", {
-                className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().section),
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
+                className: (page_module_default()).section,
                 ref: addSectionRef,
                 id: "competition-detail1",
                 children: [
-                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                        className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().itemContainer),
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: (page_module_default()).itemContainer,
                         children: [
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: `${(_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().itemBox)} ${(_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().hidden)}`,
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: `${(page_module_default()).itemBox} ${(page_module_default()).hidden}`,
                                 ref: addChildRef(3),
                                 children: [
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                        className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().title),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (page_module_default()).title,
                                         children: "공모부분"
                                     }),
-                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                        className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().description),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: (page_module_default()).description,
                                         children: [
                                             "[고등부] 고1 — 고3 ",
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
                                             "[대학부] 대1 — 대4"
                                         ]
                                     })
                                 ]
                             }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: `${(_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().divider)} ${(_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().hidden)}`,
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: `${(page_module_default()).divider} ${(page_module_default()).hidden}`,
                                 ref: addChildRef(3)
                             }),
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: `${(_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().itemBox)} ${(_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().hidden)}`,
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: `${(page_module_default()).itemBox} ${(page_module_default()).hidden}`,
                                 ref: addChildRef(3),
                                 children: [
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                        className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().title),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (page_module_default()).title,
                                         children: "공모분야"
                                     }),
-                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                        className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().description),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: (page_module_default()).description,
                                         children: [
                                             "2D ",
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
                                             "3D"
                                         ]
                                     })
                                 ]
                             }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: `${(_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().divider)} ${(_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().hidden)}`,
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: `${(page_module_default()).divider} ${(page_module_default()).hidden}`,
                                 ref: addChildRef(3)
                             }),
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: `${(_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().itemBox)} ${(_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().hidden)}`,
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: `${(page_module_default()).itemBox} ${(page_module_default()).hidden}`,
                                 ref: addChildRef(3),
                                 children: [
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                        className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().title),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (page_module_default()).title,
                                         children: "공모 주제"
                                     }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                        className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().description),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (page_module_default()).description,
                                         children: "자유주제"
                                     })
                                 ]
                             })
                         ]
                     }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                        className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().downArrow),
+                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                        className: (page_module_default()).downArrow,
                         href: "#competition-detail2",
                         ref: addChildRef(3),
-                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_svg_downArrowSVG__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {})
+                        children: /*#__PURE__*/ jsx_runtime_.jsx(DownArrowSVG, {})
                     })
                 ]
             }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
-                className: `${(_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().section)} ${(_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().expandedMobileHeight)}`,
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
+                className: `${(page_module_default()).section} ${(page_module_default()).expandedMobileHeight}`,
                 ref: addSectionRef,
                 id: "competition-detail2",
-                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                    className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().section3Container),
-                    children: [
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                            className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().title),
-                            ref: addChildRef(4),
-                            children: "TOMPED SPECTACLE DESIGN COMPETITION"
-                        }),
-                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().competitionDescriptions),
-                            children: [
-                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().itemBox),
-                                    ref: addChildRef(4),
-                                    children: [
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().image),
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_1___default()), {
-                                                src: "/images/icons/glassicon1.png",
-                                                alt: "icon",
-                                                width: 500,
-                                                height: 500,
-                                                layout: "responsive"
+                children: [
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: (page_module_default()).section3Container,
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: (page_module_default()).title,
+                                ref: addChildRef(4),
+                                children: "TOMPED SPECTACLE DESIGN COMPETITION"
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: (page_module_default()).competitionDescriptions,
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: (page_module_default()).itemBox,
+                                        ref: addChildRef(4),
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: (page_module_default()).image,
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                                    src: "/images/icons/glassicon1.png",
+                                                    alt: "icon",
+                                                    width: 500,
+                                                    height: 500,
+                                                    layout: "responsive"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                className: (page_module_default()).content,
+                                                children: [
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                        className: (page_module_default()).title,
+                                                        children: "심사기준"
+                                                    }),
+                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
+                                                        className: (page_module_default()).description,
+                                                        children: [
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "디자인의 창의성 및 독창성"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "혁신성"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "아이디어의 명확성"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "타당성 (기능 및 실용성)"
+                                                            })
+                                                        ]
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                        onClick: checkJudgeCiteria,
+                                                        children: "상세기준 확인하기"
+                                                    })
+                                                ]
                                             })
-                                        }),
-                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                            className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().content),
-                                            children: [
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                    className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().title),
-                                                    children: "심사기준"
-                                                }),
-                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
-                                                    className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().description),
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: (page_module_default()).itemBox,
+                                        ref: addChildRef(4),
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: (page_module_default()).image,
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                                    src: "/images/icons/glassicon2.png",
+                                                    alt: "icon",
+                                                    width: 500,
+                                                    height: 500,
+                                                    layout: "responsive"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                className: (page_module_default()).content,
+                                                children: [
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                        className: (page_module_default()).title,
+                                                        children: "접수기간"
+                                                    }),
+                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                        className: (page_module_default()).description,
+                                                        children: [
+                                                            "2023년 8월 8일 — ",
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                                            "2023년 10월 01일"
+                                                        ]
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                        onClick: checkApplication,
+                                                        children: "접수방법 확인하기"
+                                                    })
+                                                ]
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: (page_module_default()).itemBox,
+                                        ref: addChildRef(4),
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: (page_module_default()).image,
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                                    src: "/images/icons/glassicon3.png",
+                                                    alt: "icon",
+                                                    width: 500,
+                                                    height: 500,
+                                                    layout: "responsive"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                className: (page_module_default()).content,
+                                                children: [
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                        className: (page_module_default()).title,
+                                                        children: "공동 혜택"
+                                                    }),
+                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
+                                                        className: (page_module_default()).description,
+                                                        children: [
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "순위발표 [1-12위 까지]"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "심사위원 맞춤 피드백"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "출품 디자인 맞춤 제작 머그컵"
+                                                            })
+                                                        ]
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                                        onClick: checkBenefit,
+                                                        children: "혜텍 확인하기"
+                                                    })
+                                                ]
+                                            })
+                                        ]
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: (page_module_default()).buttonContainer,
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (page_module_default()).button,
+                                        ref: addChildRef(4),
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx(Button, {
+                                            href: "/file/TOMPED 안경테 디자인 공모전 신청서 FV.docx",
+                                            download: "TOMPED 안경테 디자인 공모전 신청서 FV.docx",
+                                            children: " 신청서 다운로드 "
+                                        })
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (page_module_default()).button,
+                                        ref: addChildRef(4),
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx(Button, {
+                                            href: "https://www.emdash.one/enter-tomped",
+                                            target: "_blank",
+                                            rel: "noopener noreferrer",
+                                            children: " 신청서 제출 "
+                                        })
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (page_module_default()).button,
+                                        ref: addChildRef(4),
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx(RedButton, {
+                                            href: "#requirements",
+                                            children: " 자세히보기 "
+                                        })
+                                    })
+                                ]
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                        className: (page_module_default()).downArrow,
+                        href: "#requirements",
+                        ref: addChildRef(4),
+                        children: /*#__PURE__*/ jsx_runtime_.jsx(DownArrowSVG, {})
+                    })
+                ]
+            }),
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
+                className: (page_module_default()).section + " " + (page_module_default()).setRequirementSectionMinHeight,
+                ref: addSectionRef,
+                id: "requirements",
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                        className: (page_module_default()).downArrow,
+                        href: "#apply",
+                        ref: addChildRef(5),
+                        children: /*#__PURE__*/ jsx_runtime_.jsx(DownArrowSVG, {})
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: (page_module_default()).requirementsContainer,
+                        children: [
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: (page_module_default()).imageGrid,
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: `${(page_module_default()).imageContainer} ${(page_module_default()).hidden}`,
+                                        ref: addChildRef(5),
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                            src: "/images/photo/glass1.png",
+                                            alt: "1",
+                                            width: gridImageWidth,
+                                            height: gridImageHeight
+                                        })
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: `${(page_module_default()).imageContainer} ${(page_module_default()).hidden}`,
+                                        ref: addChildRef(5),
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                            src: "/images/photo/glass2.png",
+                                            alt: "1",
+                                            width: gridImageWidth,
+                                            height: gridImageHeight
+                                        })
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: `${(page_module_default()).imageContainer} ${(page_module_default()).hidden}`,
+                                        ref: addChildRef(5),
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                            src: "/images/photo/glass3.png",
+                                            alt: "1",
+                                            width: gridImageWidth,
+                                            height: gridImageHeight
+                                        })
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: `${(page_module_default()).imageContainer} ${(page_module_default()).hidden}`,
+                                        ref: addChildRef(5),
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                            src: "/images/photo/glass4.png",
+                                            alt: "1",
+                                            width: gridImageWidth,
+                                            height: gridImageHeight
+                                        })
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: `${(page_module_default()).imageContainer} ${(page_module_default()).extraImage} ${(page_module_default()).hidden}`,
+                                        ref: addChildRef(5),
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                            src: "/images/photo/glass1.png",
+                                            alt: "1",
+                                            width: gridImageWidth,
+                                            height: gridImageHeight
+                                        })
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: `${(page_module_default()).imageContainer} ${(page_module_default()).extraImage} ${(page_module_default()).hidden}`,
+                                        ref: addChildRef(5),
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                            src: "/images/photo/glass2.png",
+                                            alt: "1",
+                                            width: gridImageWidth,
+                                            height: gridImageHeight
+                                        })
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: `${(page_module_default()).imageContainer} ${(page_module_default()).extraImage} ${(page_module_default()).hidden}`,
+                                        ref: addChildRef(5),
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                            src: "/images/photo/glass3.png",
+                                            alt: "1",
+                                            width: gridImageWidth,
+                                            height: gridImageHeight
+                                        })
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: `${(page_module_default()).imageContainer} ${(page_module_default()).extraImage} ${(page_module_default()).hidden}`,
+                                        ref: addChildRef(5),
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                            src: "/images/photo/glass4.png",
+                                            alt: "1",
+                                            width: gridImageWidth,
+                                            height: gridImageHeight
+                                        })
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: `${(page_module_default()).imageContainer} ${(page_module_default()).extraImage} ${(page_module_default()).hidden}`,
+                                        ref: addChildRef(5),
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                            src: "/images/photo/glass1.png",
+                                            alt: "1",
+                                            width: gridImageWidth,
+                                            height: gridImageHeight
+                                        })
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: `${(page_module_default()).requirements} ${(page_module_default()).hidden}`,
+                                ref: addChildRef(5),
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (page_module_default()).title,
+                                        children: "접수 요건"
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: (page_module_default()).titleDescription,
+                                        children: [
+                                            "참가자의 출품작은 오로지 참가자로 인해 ",
+                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                            " 창작된 독창적인 작품이어야 합니다."
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (page_module_default()).subtitle,
+                                        children: "모든 참가자는 다음 정보를 제공해야 합니다. "
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
+                                        className: (page_module_default()).description,
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                children: "참가자와 보호자의 신상정보"
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                children: "신청서 제출"
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                children: "출전비 납부"
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: (page_module_default()).subtitle,
+                                        children: "모든 작품은 다음 규정에 맞게 제출되어야 합니다. "
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
+                                        className: (page_module_default()).description,
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                children: "신청서 한글 원본"
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                children: "사진 크기: 최단 면은 최소 2,400 픽셀 및 300dpi 이상"
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                children: "작품당 1-5 장의 이미지 (각 이미지 당 20MB 이하)"
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                children: "3D 작품일 경우 다각도에서 렌더링 된 이미지 1-5장 제출 "
+                                            })
+                                        ]
+                                    })
+                                ]
+                            })
+                        ]
+                    })
+                ]
+            }),
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
+                className: (page_module_default()).section,
+                ref: addSectionRef,
+                id: "apply",
+                children: [
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: (page_module_default()).receptionDescriptionContainer,
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: (page_module_default()).title + " " + (page_module_default()).hidden,
+                                ref: addChildRef(6),
+                                children: "접수 방법"
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: (page_module_default()).descriptions,
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: (page_module_default()).itemBox + " " + (page_module_default()).hidden,
+                                        ref: addChildRef(6),
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: (page_module_default()).subtitle,
+                                                children: "1. 신청서 다운로드"
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: (page_module_default()).description,
+                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
                                                     children: [
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                            children: "디자인의 창의성 및 독창성"
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("b", {
+                                                            children: " 필요한 정보 "
                                                         }),
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                            children: "혁신성"
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                            children: "참가자 성명 및 이메일"
                                                         }),
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                            children: "아이디어의 명확성"
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                            children: "참가자 생년월일"
                                                         }),
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                            children: "타당성 (기능 및 실용성)"
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                            children: "보호자 성명 및 이메일"
+                                                        }),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                            children: "보호자 전화번호"
+                                                        }),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                            children: "주소 (선택사항)"
+                                                        }),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                            children: "학교 이름 (해당시)"
+                                                        }),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                            children: "학년 및 졸업 년도"
+                                                        }),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                            children: "참가 부문"
                                                         })
                                                     ]
-                                                }),
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                    onClick: checkJudgeCiteria,
-                                                    children: "상세기준 확인하기"
                                                 })
-                                            ]
-                                        })
-                                    ]
-                                }),
-                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().itemBox),
-                                    ref: addChildRef(4),
-                                    children: [
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().image),
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_1___default()), {
-                                                src: "/images/icons/glassicon2.png",
-                                                alt: "icon",
-                                                width: 500,
-                                                height: 500,
-                                                layout: "responsive"
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: (page_module_default()).button,
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx(Button, {
+                                                    href: "/file/TOMPED 안경테 디자인 공모전 신청서 FV.docx",
+                                                    download: "TOMPED 안경테 디자인 공모전 신청서 FV.docx",
+                                                    children: " 다운로드 "
+                                                })
                                             })
-                                        }),
-                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                            className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().content),
-                                            children: [
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                    className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().title),
-                                                    children: "접수기간"
-                                                }),
-                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                    className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().description),
-                                                    children: [
-                                                        "2023년 8월 8일 — ",
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
-                                                        "2023년 10월 01일"
-                                                    ]
-                                                }),
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                    onClick: checkApplication,
-                                                    children: "접수방법 확인하기"
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: (page_module_default()).itemBox + " " + (page_module_default()).hidden,
+                                        ref: addChildRef(6),
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: (page_module_default()).subtitle,
+                                                children: "2. 신청서 제출"
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: (page_module_default()).description,
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                    children: "참가자는 참가 분야를 선택한 후 접수 요건에 맞게 작품을 제출해야 합니다."
                                                 })
-                                            ]
-                                        })
-                                    ]
-                                }),
-                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().itemBox),
-                                    ref: addChildRef(4),
-                                    children: [
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().image),
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_1___default()), {
-                                                src: "/images/icons/glassicon3.png",
-                                                alt: "icon",
-                                                width: 500,
-                                                height: 500,
-                                                layout: "responsive"
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: (page_module_default()).button,
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx(Button, {
+                                                    href: "https://www.emdash.one/enter-tomped",
+                                                    target: "_blank",
+                                                    rel: "noopener noreferrer",
+                                                    children: " 제출 "
+                                                })
                                             })
-                                        }),
-                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                            className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().content),
-                                            children: [
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                    className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().title),
-                                                    children: "공동 혜택"
-                                                }),
-                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
-                                                    className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().description),
-                                                    children: [
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                            children: "순위발표 [1-12위 까지]"
-                                                        }),
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                            children: "심사위원 맞춤 피드백"
-                                                        }),
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                            children: "출품 디자인 맞춤 제작 머그컵"
-                                                        })
-                                                    ]
-                                                }),
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                    onClick: checkBenefit,
-                                                    children: "혜텍 확인하기"
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: (page_module_default()).itemBox + " " + (page_module_default()).hidden,
+                                        ref: addChildRef(6),
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: (page_module_default()).subtitle,
+                                                children: " 3. 출전비 납부 "
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                className: (page_module_default()).description,
+                                                children: [
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                        children: "복수 제출의 경우, 각 작품 당 별도의 신청서를 작성해야 하며, 참가비 또한 개별적으로 지불해야 합니다."
+                                                    }),
+                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                                                        children: [
+                                                            "2D: 25,000 KRW ",
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                                            "3D: 50,000 KRW"
+                                                        ]
+                                                    }),
+                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                                                        children: [
+                                                            "입금자명: 참가자 성명",
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                                            "은행명: Woori Bank/우리은행예금",
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                                            "주: EMDASH",
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                                            "(주)엠대시 통장 계좌: 1005-404-327510",
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                                            "은행 식별 코드: HVBKKRSEXXX",
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {})
+                                                        ]
+                                                    })
+                                                ]
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: (page_module_default()).button,
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx(Button, {
+                                                    onClick: handleCopy,
+                                                    children: " 계좌복사 "
                                                 })
-                                            ]
-                                        })
-                                    ]
-                                })
-                            ]
-                        }),
-                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().buttonContainer),
-                            children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().button),
-                                    ref: addChildRef(4),
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_button_button__WEBPACK_IMPORTED_MODULE_4__/* .Button */ .z, {
-                                        href: "/file/TOMPED 안경테 디자인 공모전 신청서 FV.docx",
-                                        download: "TOMPED 안경테 디자인 공모전 신청서 FV.docx",
-                                        children: " 신청서 다운로드 "
+                                            })
+                                        ]
                                     })
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().button),
-                                    ref: addChildRef(4),
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_button_button__WEBPACK_IMPORTED_MODULE_4__/* .Button */ .z, {
-                                        href: "https://www.emdash.one/enter-tomped",
-                                        children: " 신청서 제출 "
+                                ]
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                        className: `${(page_module_default()).downArrow} ${(page_module_default()).hidden}`,
+                        href: "#judgement",
+                        ref: addChildRef(6),
+                        children: /*#__PURE__*/ jsx_runtime_.jsx(DownArrowSVG, {})
+                    }),
+                    copySuccess && /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: (page_module_default()).copyMessage,
+                        style: {
+                            backgroundColor: copySuccess == "Copied to clipboard!" ? "green" : "red"
+                        },
+                        children: copySuccess
+                    })
+                ]
+            }),
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
+                className: (page_module_default()).section,
+                ref: addSectionRef,
+                id: "judgement",
+                children: [
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: (page_module_default()).judgement,
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: (page_module_default()).title + " " + (page_module_default()).hidden,
+                                ref: addChildRef(7),
+                                children: "심사 기준표"
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: (page_module_default()).titleDescription + " " + (page_module_default()).hidden,
+                                ref: addChildRef(7),
+                                children: "심사 위원회는 TOM GLASS 임원진들로 구성됩니다. TOMPED의 심사 기준 및 기준치는 다음과 같습니다."
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: (page_module_default()).container,
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: (page_module_default()).itemBox + " " + (page_module_default()).hidden,
+                                        ref: addChildRef(7),
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: (page_module_default()).subtitle,
+                                                children: "2D"
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                className: (page_module_default()).description,
+                                                children: [
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                        children: " 디자인의 창의성 및 독창성 [50%] "
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                        children: " 혁신성 [20%] "
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                        children: " 아이디어의 명확성 [20%] "
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                        children: " 타당성 (기능성 및 실용성) [10%] "
+                                                    })
+                                                ]
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: (page_module_default()).itemBox + " " + (page_module_default()).hidden,
+                                        ref: addChildRef(7),
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: (page_module_default()).subtitle,
+                                                children: "3D"
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                className: (page_module_default()).description,
+                                                children: [
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                        children: " 디자인의 창의성 및 독창성 [40%] "
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                        children: " 혁신성 [20%] "
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                        children: " 아이디어의 명확성 [20%] "
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                        children: " 타당성 (기능성 및 실용성) [20%] "
+                                                    })
+                                                ]
+                                            })
+                                        ]
                                     })
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    className: (_page_module_css__WEBPACK_IMPORTED_MODULE_5___default().button),
-                                    ref: addChildRef(4),
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_button_button__WEBPACK_IMPORTED_MODULE_4__/* .RedButton */ .Q, {
-                                        href: "/detail",
-                                        children: " 자세히보기 "
+                                ]
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                        className: `${(page_module_default()).downArrow} ${(page_module_default()).hidden}`,
+                        href: "#price",
+                        ref: addChildRef(7),
+                        children: /*#__PURE__*/ jsx_runtime_.jsx(DownArrowSVG, {})
+                    })
+                ]
+            }),
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
+                className: `${(page_module_default()).section} ${(page_module_default()).expandedHeight} ${(page_module_default()).expandedMobileHeight2}`,
+                id: "price",
+                children: [
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: (page_module_default()).pageview,
+                        children: [
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: (page_module_default()).pageContainer,
+                                ref: addSectionRef,
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: `${(page_module_default()).titleContainer} ${(page_module_default()).hidden}`,
+                                        ref: addChildRef(8),
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: (page_module_default()).imageContainer,
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                                    src: "/images/price/top3price.png",
+                                                    alt: "1",
+                                                    width: 500,
+                                                    height: 500,
+                                                    layout: "responsive"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: (page_module_default()).title,
+                                                children: "Top 1-3 ICOSA 아이코사 상"
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: `${(page_module_default()).descriptionContainer} ${(page_module_default()).hidden}`,
+                                        ref: addChildRef(8),
+                                        children: [
+                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                className: (page_module_default()).descriptionBox,
+                                                children: [
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                        className: (page_module_default()).subtitle,
+                                                        children: "2D 부문 ICOSA 혜택"
+                                                    }),
+                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
+                                                        className: (page_module_default()).description,
+                                                        children: [
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "순위 발표 [Hall of Game]"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "심사위원의 맞춤 피드백"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "ICOSA 상장"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "각 수상자에게 톰글래스 스토어에서 원하는 제품 1개 증정"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "출품된 디자인이 입혀진 머그컵 증정 [by Conteenew]"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                                className: (page_module_default()).examplebutton,
+                                                                children: /*#__PURE__*/ jsx_runtime_.jsx(Button, {
+                                                                    href: "https://vrin.co.kr/guide/ko",
+                                                                    target: "_blank",
+                                                                    rel: "noopener noreferrer",
+                                                                    style: {
+                                                                        width: 230
+                                                                    },
+                                                                    children: "3D 이미지 예시 (VRIN)"
+                                                                })
+                                                            })
+                                                        ]
+                                                    })
+                                                ]
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                className: (page_module_default()).descriptionBox,
+                                                children: [
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                        className: (page_module_default()).subtitle,
+                                                        children: "3D 부문 ICOSA 혜택"
+                                                    }),
+                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
+                                                        className: (page_module_default()).description,
+                                                        children: [
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "순위 발표 [Hall of Game]"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "심사위원의 맞춤 피드백"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "ICOSA 상장"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "각 수상자에게 톰글래스 스토어에서 원하는 제품 1개 증정"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "3D 프로토타입 모델 제작 "
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "Rebuilder AI에서 3D 이미지화"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "TOM GLASS에서 수상작을 상품화하는 경우 소정의 소유권 이전 대금 지급 "
+                                                            })
+                                                        ]
+                                                    })
+                                                ]
+                                            })
+                                        ]
                                     })
-                                })
-                            ]
-                        })
-                    ]
-                })
+                                ]
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: (page_module_default()).pageContainer,
+                                ref: addSectionRef,
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: `${(page_module_default()).titleContainer} ${(page_module_default()).hidden}`,
+                                        ref: addChildRef(9),
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: (page_module_default()).imageContainer,
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                                    src: "/images/price/top12price.png",
+                                                    alt: "1",
+                                                    width: 500,
+                                                    height: 500,
+                                                    layout: "responsive"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: (page_module_default()).title,
+                                                children: "Top 4-12 OCTA 옥타 상"
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: `${(page_module_default()).descriptionContainer} ${(page_module_default()).hidden}`,
+                                        ref: addChildRef(9),
+                                        children: [
+                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                className: (page_module_default()).descriptionBox,
+                                                children: [
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                        className: (page_module_default()).subtitle,
+                                                        children: "2D 부문 OCTA 혜택"
+                                                    }),
+                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
+                                                        className: (page_module_default()).description,
+                                                        children: [
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "순위 발표 [Hall of Game]"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "심사위원의 한줄평 "
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "OCTA 상장"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "각 수상자에게 톰글래스 스토어에서 50% 할인 쿠폰"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "출품된 디자인이 입혀진 머그컵 증정 [by Conteenew]"
+                                                            })
+                                                        ]
+                                                    })
+                                                ]
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                className: (page_module_default()).descriptionBox,
+                                                children: [
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                        className: (page_module_default()).subtitle,
+                                                        children: "3D 부문 OCTA 혜택"
+                                                    }),
+                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
+                                                        className: (page_module_default()).description,
+                                                        children: [
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "순위 발표 [Hall of Game]"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "심사위원의 한줄평"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "OCTA 상장"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "각 수상자에게 톰글래스 스토어에서 50% 할인 쿠폰"
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                                children: "출품된 디자인에 입혀진 머그컵 증정 [by Conteenew]"
+                                                            })
+                                                        ]
+                                                    })
+                                                ]
+                                            })
+                                        ]
+                                    })
+                                ]
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                        className: `${(page_module_default()).prevButton}`,
+                        onClick: handlePrev,
+                        children: /*#__PURE__*/ jsx_runtime_.jsx(DownArrowSVG, {})
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                        className: `${(page_module_default()).nextButton}`,
+                        onClick: handleNext,
+                        children: /*#__PURE__*/ jsx_runtime_.jsx(DownArrowSVG, {})
+                    })
+                ]
             })
         ]
     });
@@ -800,24 +1529,61 @@ module.exports = {
 	"visible": "page_visible__NlJV_",
 	"title": "page_title__3jonF",
 	"description": "page_description__86bsR",
+	"expandedHeight": "page_expandedHeight__YDE3b",
 	"expandedMobileHeight": "page_expandedMobileHeight__4iaW6",
-	"imageContainer": "page_imageContainer__gQbWL",
+	"titleMinHeight": "page_titleMinHeight__4JK9o",
+	"imagesContainer": "page_imagesContainer__2zlI9",
 	"image": "page_image__NPJyO",
 	"p": "page_p___6xkP",
 	"posterButton": "page_posterButton__toU5_",
 	"brandExplanation": "page_brandExplanation__WitAu",
+	"brandExplanationContainer": "page_brandExplanationContainer__tjGrK",
+	"red": "page_red__7Jbic",
 	"competitionDescriptions": "page_competitionDescriptions__WP_kh",
 	"itemBox": "page_itemBox__ye45D",
 	"content": "page_content__kDoxQ",
+	"imageContainer": "page_imageContainer__gQbWL",
 	"itemContainer": "page_itemContainer__AdD_X",
 	"divider": "page_divider__Ku6aS",
 	"section3Container": "page_section3Container__j7hu3",
 	"buttonContainer": "page_buttonContainer__XCXUY",
 	"button": "page_button__vnlhW",
-	"brandExplanationContainer": "page_brandExplanationContainer__tjGrK",
-	"red": "page_red__7Jbic",
 	"downArrow": "page_downArrow___Jp_o",
-	"arrowAnimation": "page_arrowAnimation__6jvMa"
+	"arrowAnimation": "page_arrowAnimation__6jvMa",
+	"setRequirementSectionMinHeight": "page_setRequirementSectionMinHeight__ai3Z0",
+	"requirementsContainer": "page_requirementsContainer__bbL1j",
+	"imageGrid": "page_imageGrid__13QKI",
+	"extraImage": "page_extraImage___si7t",
+	"scrollAnimation": "page_scrollAnimation__m_IVd",
+	"requirements": "page_requirements__HRAIx",
+	"titleDescription": "page_titleDescription__NxI4N",
+	"subtitle": "page_subtitle__iAJUg",
+	"receptionDescriptionContainer": "page_receptionDescriptionContainer__C8Kds",
+	"descriptions": "page_descriptions__fan43",
+	"copyMessage": "page_copyMessage__kB9WR",
+	"judgement": "page_judgement__42ROp",
+	"container": "page_container__aoG4z",
+	"expandedMobileHeight2": "page_expandedMobileHeight2__C7VgU",
+	"pageview": "page_pageview__cfCuC",
+	"examplebutton": "page_examplebutton__y0Lxs",
+	"pageContainer": "page_pageContainer___Ajkl",
+	"titleContainer": "page_titleContainer__LkrOz",
+	"descriptionContainer": "page_descriptionContainer__aSuqv",
+	"descriptionBox": "page_descriptionBox__l4EIW",
+	"prevButton": "page_prevButton__NK8cd",
+	"nextButton": "page_nextButton__ACJeB"
+};
+
+
+/***/ }),
+
+/***/ 4043:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+	"button": "button_button__TIoc7",
+	"red": "button_red__Q5Ye3"
 };
 
 
@@ -856,7 +1622,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [697,962,451,296,845], () => (__webpack_exec__(1278)));
+var __webpack_exports__ = __webpack_require__.X(0, [697,729,451,120], () => (__webpack_exec__(1278)));
 module.exports = __webpack_exports__;
 
 })();

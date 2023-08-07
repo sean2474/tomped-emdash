@@ -347,21 +347,26 @@ var button_module_default = /*#__PURE__*/__webpack_require__.n(button_module);
 ;// CONCATENATED MODULE: ./src/components/button/button.tsx
 
 
-const Button = ({ children, href, className, onClick, download })=>{
+const Button = ({ children, href, className, onClick, download, target, rel, style })=>{
     return /*#__PURE__*/ jsx_runtime_.jsx("a", {
         className: `${(button_module_default()).button} ${className}`,
         href: href,
         onClick: onClick,
         download: download,
+        target: target,
+        rel: rel,
+        style: style,
         children: children
     });
 };
-const RedButton = ({ children, href, className, onClick, download })=>{
+const RedButton = ({ children, href, className, onClick, download, target, rel })=>{
     return /*#__PURE__*/ _jsx("a", {
         className: `${styles.red} ${styles.button} ${className}`,
         href: href,
         onClick: onClick,
         download: download,
+        target: target,
+        rel: rel,
         children: children
     });
 };
@@ -406,7 +411,7 @@ function Home() {
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [697,962,178,296], () => (__webpack_exec__(8653)));
+var __webpack_exports__ = __webpack_require__.X(0, [697,729,120], () => (__webpack_exec__(8653)));
 module.exports = __webpack_exports__;
 
 })();

@@ -13,6 +13,7 @@ body {
   overflow-x: hidden;
   background-color: black;
   color: white;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -35,6 +36,7 @@ main {
 
 section {
   height: 100vh;
+  min-height: 800px;
   padding: 5vh 20px;
   display: flex;
   flex-direction: column;
