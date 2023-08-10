@@ -22,25 +22,8 @@
   margin: 24px 0 0 24px;
   line-height: 1.75;
 }
-@media screen and (max-width: 720px) {
-  
-}
-.expandedMobileHeight {
-  min-height: 800px;
-  height: 100vh;
-  padding: 5vh 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  @media screen and (max-width: 720px) {
-    min-height: 1200px;
-  }
-}
 
-.titleMinHeight {
+.titleSection {
   @media screen and (max-width: 470px) {
     min-height: 700px;
   }
@@ -97,11 +80,15 @@
 .posterButton {
   position: absolute;
   bottom: 100px; 
-  left: calc(50% - 100px);
+  left: 50%;
+  transform: translateX(-50%);
   @media screen and (max-width: 1080px) {
     position: static;
-    display: block;
-    margin: 10px auto 0 auto;
+    display: flex;
+    width: 100%;
+    transform: translateX(0%);
+    justify-content: center;
+    margin: 0 0 auto 0;
   }
 }
 
@@ -307,25 +294,40 @@
   }
 }
 
-.section3Container .title {
+.competitionDetail2Section {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  @media screen and (max-width: 720px) {
+  }
+}
+
+.competitionDetail2Container {
+  padding-top: 5vw;
+}
+
+.competitionDetail2Container .title {
   margin-bottom: 30px;
 }
-.section3Container .buttonContainer {
+
+.competitionDetail2Container .buttonContainer {
   display: flex;
   justify-content: center;
   width: 100%;
   margin: auto;
   padding: 0;
-  margin-bottom: 40px;
 
   @media screen and (max-width: 720px) {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 100px;
   }
 }
 
-.section3Container .buttonContainer .button {
+.competitionDetail2Container .buttonContainer .button {
   margin: 0 20px 0 20px;
   @media screen and (max-width: 720px) {
     margin: 4px 0 0 0;
@@ -353,10 +355,6 @@
   100% { transform: translateY(-5px); }
 }
 
-.section3Container {
-  padding-top: 5vw;
-}
-
 .itemBox:nth-child(2) {
   transition-delay: 200ms;
 }
@@ -380,12 +378,6 @@
   transition-delay: 400ms;
 }
 
-.setRequirementSectionMinHeight {
-  @media screen and (max-width: 1000px) {
-    min-height: 950px;
-  }
-}
-
 .requirementsContainer {
   display: flex;
   justify-content: center;
@@ -398,7 +390,6 @@
   }
 }
 
-
 .requirementsContainer .imageGrid {
   display: flex;
   flex-wrap: wrap;
@@ -409,7 +400,7 @@
     width: 1080px;
     display: flex;
     justify-content: center;
-    margin: 100px 0 0 0;
+    margin: 0 0 0 0;
   }
 
   @media screen and (max-width: 720px) {
@@ -443,7 +434,7 @@
 
 @keyframes scrollAnimation {
   0% { transform: translateX(-300px); }
-  100% { transform: translateX(340px); }
+  100% { transform: translateX(340pxx); }
 }
 
 .requirementsContainer .imageGrid img:hover {

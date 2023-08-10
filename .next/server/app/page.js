@@ -284,11 +284,11 @@ __webpack_require__.r(__webpack_exports__);
 /***/ 800:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4073))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 858))
 
 /***/ }),
 
-/***/ 4073:
+/***/ 858:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -326,36 +326,10 @@ function DownArrowSVG() {
     });
 }
 
-// EXTERNAL MODULE: ./src/components/button/button.module.css
-var button_module = __webpack_require__(4043);
-var button_module_default = /*#__PURE__*/__webpack_require__.n(button_module);
-;// CONCATENATED MODULE: ./src/components/button/button.tsx
-
-
-const Button = ({ children, href, className, onClick, download, target, rel, style })=>{
-    return /*#__PURE__*/ jsx_runtime_.jsx("a", {
-        className: `${(button_module_default()).button} ${className}`,
-        href: href,
-        onClick: onClick,
-        download: download,
-        target: target,
-        rel: rel,
-        style: style,
-        children: children
-    });
-};
-const RedButton = ({ children, href, className, onClick, download, target, rel })=>{
-    return /*#__PURE__*/ jsx_runtime_.jsx("a", {
-        className: `${(button_module_default()).red} ${(button_module_default()).button} ${className}`,
-        href: href,
-        onClick: onClick,
-        download: download,
-        target: target,
-        rel: rel,
-        children: children
-    });
-};
-
+// EXTERNAL MODULE: ./src/components/button/button.tsx
+var button_button = __webpack_require__(2581);
+// EXTERNAL MODULE: ./node_modules/react-responsive/dist/react-responsive.js
+var react_responsive = __webpack_require__(8148);
 ;// CONCATENATED MODULE: ./src/app/page.tsx
 /* __next_internal_client_entry_do_not_use__ default auto */ 
 
@@ -363,7 +337,11 @@ const RedButton = ({ children, href, className, onClick, download, target, rel }
 
 
 
+
 function Home() {
+    const shouldTitleDescriptionBreakLine = (0,react_responsive.useMediaQuery)({
+        query: "(min-width: 425px)"
+    });
     const childRefs = (0,react_.useRef)([]);
     const addChildRef = (index)=>{
         return (el)=>{
@@ -460,67 +438,66 @@ function Home() {
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("main", {
         className: (page_module_default()).main,
         children: [
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
-                className: `${(page_module_default()).section} ${(page_module_default()).titleMinHeight}`,
+            /*#__PURE__*/ jsx_runtime_.jsx("section", {
+                className: `${(page_module_default()).titleSection}`,
                 ref: addSectionRef,
                 id: "title",
-                children: [
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                        className: (page_module_default()).imagesContainer,
-                        children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: `${(page_module_default()).image} ${(page_module_default()).hidden}`,
-                                ref: addChildRef(0),
-                                children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
-                                    src: "/images/content-1.jpg",
-                                    alt: "poster",
-                                    width: 500,
-                                    height: 500,
-                                    layout: "responsive"
-                                })
-                            }),
-                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: `${(page_module_default()).image} ${(page_module_default()).hidden}`,
-                                ref: addChildRef(0),
-                                children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: (page_module_default()).title,
-                                        children: "TOMPED"
-                                    }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: (page_module_default()).p,
-                                        children: "TOM GLASS  및 EMDASH 사가 주최하는 TOMPED 국제 공모전은 고등학생 및 대학생들을 위해 TOM GLASS 임원진들을 필두로 우수한 작품들을 선발하고 이에 대한 심사평을 제공하는 대회입니다."
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: `${(page_module_default()).image} ${(page_module_default()).hidden}`,
-                                ref: addChildRef(0),
-                                children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
-                                    src: "/images/content-2.jpg",
-                                    alt: "poster",
-                                    width: 500,
-                                    height: 500,
-                                    layout: "responsive"
-                                })
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                className: (page_module_default()).downArrow,
-                                href: "#brand-explain",
-                                ref: addChildRef(0),
-                                children: /*#__PURE__*/ jsx_runtime_.jsx(DownArrowSVG, {})
+                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                    className: (page_module_default()).imagesContainer,
+                    children: [
+                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                            className: `${(page_module_default()).image} ${(page_module_default()).hidden}`,
+                            ref: addChildRef(0),
+                            children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                src: "/images/content-1.jpg",
+                                alt: "poster",
+                                width: 500,
+                                height: 500,
+                                layout: "responsive"
                             })
-                        ]
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: `${(page_module_default()).posterButton} ${(page_module_default()).hidden}`,
-                        ref: addChildRef(0),
-                        children: /*#__PURE__*/ jsx_runtime_.jsx(Button, {
-                            href: "/poster",
-                            children: "포스터 보기"
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                            className: `${(page_module_default()).image} ${(page_module_default()).hidden}`,
+                            ref: addChildRef(0),
+                            children: [
+                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                    className: (page_module_default()).title,
+                                    children: "TOMPED"
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                    className: (page_module_default()).p,
+                                    children: "TOM GLASS  및 EMDASH 사가 주최하는 TOMPED 국제 공모전은 고등학생 및 대학생들을 위해 TOM GLASS 임원진들을 필두로 우수한 작품들을 선발하고 이에 대한 심사평을 제공하는 대회입니다."
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                            className: `${(page_module_default()).image} ${(page_module_default()).hidden}`,
+                            ref: addChildRef(0),
+                            children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                src: "/images/content-2.jpg",
+                                alt: "poster",
+                                width: 500,
+                                height: 500,
+                                layout: "responsive"
+                            })
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                            className: `${(page_module_default()).posterButton} ${(page_module_default()).hidden}`,
+                            ref: addChildRef(0),
+                            children: /*#__PURE__*/ jsx_runtime_.jsx(button_button/* Button */.z, {
+                                href: "/poster",
+                                target: "_blank",
+                                children: "포스터 보기"
+                            })
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                            className: (page_module_default()).downArrow,
+                            href: "#brand-explain",
+                            ref: addChildRef(0),
+                            children: /*#__PURE__*/ jsx_runtime_.jsx(DownArrowSVG, {})
                         })
-                    })
-                ]
+                    ]
+                })
             }),
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
                 className: (page_module_default()).section,
@@ -607,7 +584,7 @@ function Home() {
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         className: (page_module_default()).description,
                         ref: addChildRef(2),
-                        children: "MPED 국제 아트앤디자인 공모전은 전 세계 학생 아티스트들의 우수함과 독창성을 주목하며 찬양합니다. 예술적 열정과 탐구심 그리고 정진력(精進力)을 기반으로 한 작품들을 선정하며 이를 국제 무대에 선보일 수 있는 플랫폼을 제공합니다. TOMPED SPECTACLE DESIGN COMPETITION"
+                        children: "MPED 국제 아트앤디자인 공모전은 전 세계 학생 아티스트들의 우수함과 독창성을 주목하며 찬양합니다. 예술적 열정과 탐구심 그리고 정진력(精進力)을 기반으로 한 작품들을 선정하며 이를 국제 무대에 선보일 수 있는 플랫폼을 제공합니다."
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("a", {
                         className: (page_module_default()).downArrow,
@@ -693,13 +670,13 @@ function Home() {
                     })
                 ]
             }),
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                className: `${(page_module_default()).expandedMobileHeight}`,
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
+                className: `${(page_module_default()).competitionDetail2Section}`,
                 ref: addSectionRef,
                 id: "competition-detail2",
                 children: [
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                        className: (page_module_default()).section3Container,
+                        className: (page_module_default()).competitionDetail2Container,
                         children: [
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                 className: (page_module_default()).title,
@@ -843,7 +820,7 @@ function Home() {
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                         className: (page_module_default()).button,
                                         ref: addChildRef(4),
-                                        children: /*#__PURE__*/ jsx_runtime_.jsx(Button, {
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx(button_button/* Button */.z, {
                                             href: "/file/TOMPED 안경테 디자인 공모전 신청서 FV.docx",
                                             download: "TOMPED 안경테 디자인 공모전 신청서 FV.docx",
                                             children: " 신청서 다운로드 "
@@ -852,7 +829,7 @@ function Home() {
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                         className: (page_module_default()).button,
                                         ref: addChildRef(4),
-                                        children: /*#__PURE__*/ jsx_runtime_.jsx(Button, {
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx(button_button/* Button */.z, {
                                             href: "https://www.emdash.one/enter-tomped",
                                             target: "_blank",
                                             rel: "noopener noreferrer",
@@ -862,7 +839,7 @@ function Home() {
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                         className: (page_module_default()).button,
                                         ref: addChildRef(4),
-                                        children: /*#__PURE__*/ jsx_runtime_.jsx(RedButton, {
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx(button_button/* RedButton */.Q, {
                                             href: "#requirements",
                                             children: " 자세히보기 "
                                         })
@@ -1000,7 +977,7 @@ function Home() {
                                         className: (page_module_default()).titleDescription,
                                         children: [
                                             "참가자의 출품작은 오로지 참가자로 인해 ",
-                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                            shouldTitleDescriptionBreakLine && /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
                                             " 창작된 독창적인 작품이어야 합니다."
                                         ]
                                     }),
@@ -1109,7 +1086,7 @@ function Home() {
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                 className: (page_module_default()).button,
-                                                children: /*#__PURE__*/ jsx_runtime_.jsx(Button, {
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx(button_button/* Button */.z, {
                                                     href: "/file/TOMPED 안경테 디자인 공모전 신청서 FV.docx",
                                                     download: "TOMPED 안경테 디자인 공모전 신청서 FV.docx",
                                                     children: " 다운로드 "
@@ -1133,7 +1110,7 @@ function Home() {
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                 className: (page_module_default()).button,
-                                                children: /*#__PURE__*/ jsx_runtime_.jsx(Button, {
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx(button_button/* Button */.z, {
                                                     href: "https://www.emdash.one/enter-tomped",
                                                     target: "_blank",
                                                     rel: "noopener noreferrer",
@@ -1181,7 +1158,7 @@ function Home() {
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                 className: (page_module_default()).button,
-                                                children: /*#__PURE__*/ jsx_runtime_.jsx(Button, {
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx(button_button/* Button */.z, {
                                                     onClick: handleCopy,
                                                     children: " 계좌복사 "
                                                 })
@@ -1353,7 +1330,7 @@ function Home() {
                                                             }),
                                                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                                 className: (page_module_default()).examplebutton,
-                                                                children: /*#__PURE__*/ jsx_runtime_.jsx(Button, {
+                                                                children: /*#__PURE__*/ jsx_runtime_.jsx(button_button/* Button */.z, {
                                                                     href: "https://vrin.co.kr/guide/ko",
                                                                     target: "_blank",
                                                                     rel: "noopener noreferrer",
@@ -1523,8 +1500,7 @@ module.exports = {
 	"visible": "page_visible__NlJV_",
 	"title": "page_title__3jonF",
 	"description": "page_description__86bsR",
-	"expandedMobileHeight": "page_expandedMobileHeight__4iaW6",
-	"titleMinHeight": "page_titleMinHeight__4JK9o",
+	"titleSection": "page_titleSection__ldcQY",
 	"imagesContainer": "page_imagesContainer__2zlI9",
 	"image": "page_image__NPJyO",
 	"p": "page_p___6xkP",
@@ -1538,12 +1514,12 @@ module.exports = {
 	"imageContainer": "page_imageContainer__gQbWL",
 	"itemContainer": "page_itemContainer__AdD_X",
 	"divider": "page_divider__Ku6aS",
-	"section3Container": "page_section3Container__j7hu3",
+	"competitionDetail2Section": "page_competitionDetail2Section__4TKHz",
+	"competitionDetail2Container": "page_competitionDetail2Container__83b4F",
 	"buttonContainer": "page_buttonContainer__XCXUY",
 	"button": "page_button__vnlhW",
 	"downArrow": "page_downArrow___Jp_o",
 	"arrowAnimation": "page_arrowAnimation__6jvMa",
-	"setRequirementSectionMinHeight": "page_setRequirementSectionMinHeight__ai3Z0",
 	"requirementsContainer": "page_requirementsContainer__bbL1j",
 	"imageGrid": "page_imageGrid__13QKI",
 	"extraImage": "page_extraImage___si7t",
@@ -1565,18 +1541,6 @@ module.exports = {
 	"descriptionBox": "page_descriptionBox__l4EIW",
 	"prevButton": "page_prevButton__NK8cd",
 	"nextButton": "page_nextButton__ACJeB"
-};
-
-
-/***/ }),
-
-/***/ 4043:
-/***/ ((module) => {
-
-// Exports
-module.exports = {
-	"button": "button_button__TIoc7",
-	"red": "button_red__Q5Ye3"
 };
 
 
@@ -1615,7 +1579,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [697,729,451,91], () => (__webpack_exec__(1278)));
+var __webpack_exports__ = __webpack_require__.X(0, [697,208,148,577], () => (__webpack_exec__(1278)));
 module.exports = __webpack_exports__;
 
 })();

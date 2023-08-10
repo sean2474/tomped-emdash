@@ -5,8 +5,11 @@ import styles from './page.module.css'
 import { useEffect, useRef, useState } from 'react';
 import DownArrowSVG from "@/components/svg/downArrowSVG"
 import { RedButton, Button } from '@/components/button/button';
+import { useMediaQuery } from 'react-responsive';
 
 export default function Home() {  
+
+  const shouldTitleDescriptionBreakLine = useMediaQuery({ query: '(min-width: 425px)' })
   const childRefs = useRef<HTMLElement[][]>([]);
   const addChildRef = (index: number) => {
     return (el: HTMLElement | null) => {
@@ -110,7 +113,7 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <section className={`${styles.section} ${styles.titleMinHeight}`} ref={addSectionRef} id="title">
+      <section className={`${styles.titleSection}`} ref={addSectionRef} id="title">
         <div className={styles.imagesContainer}>
           <div className={`${styles.image} ${styles.hidden}`} ref={addChildRef(0)}>
             <Image src="/images/content-1.jpg" alt="poster" width={500} height={500} layout="responsive"></Image>
@@ -126,12 +129,12 @@ export default function Home() {
           <div className={`${styles.image} ${styles.hidden}`} ref={addChildRef(0)}>
             <Image src="/images/content-2.jpg" alt="poster" width={500} height={500} layout="responsive"></Image>
           </div>
+          <div className={`${styles.posterButton} ${styles.hidden}`} ref={addChildRef(0)}>
+            <Button href='/poster' target="_blank">포스터 보기</Button>
+          </div>
           <a className={styles.downArrow} href='#brand-explain' ref={addChildRef(0)}>
             <DownArrowSVG />
           </a>
-        </div>
-        <div className={`${styles.posterButton} ${styles.hidden}`} ref={addChildRef(0)}>
-          <Button href='/poster'>포스터 보기</Button>
         </div>
       </section>
       <section className={styles.section} ref={addSectionRef} id="brand-explain"> 
@@ -165,7 +168,7 @@ export default function Home() {
         </div>
         <div className={styles.description} ref={addChildRef(2)}>
           MPED 국제 아트앤디자인 공모전은 전 세계 학생 아티스트들의 우수함과 독창성을 주목하며 찬양합니다. 예술적 열정과 탐구심 그리고 정진력(精進力)을
-          기반으로 한 작품들을 선정하며 이를 국제 무대에 선보일 수 있는 플랫폼을 제공합니다. TOMPED SPECTACLE DESIGN COMPETITION
+          기반으로 한 작품들을 선정하며 이를 국제 무대에 선보일 수 있는 플랫폼을 제공합니다.
         </div>
           <a className={styles.downArrow} href='#competition-detail1' ref={addChildRef(2)}>
             <DownArrowSVG />
@@ -204,8 +207,8 @@ export default function Home() {
         </div>
         <a className={styles.downArrow} href='#competition-detail2' ref={addChildRef(3)}><DownArrowSVG /></a>
       </section>
-      <div className={`${styles.expandedMobileHeight}`} ref={addSectionRef} id="competition-detail2">
-        <div className={styles.section3Container}>
+      <section className={`${styles.competitionDetail2Section}`} ref={addSectionRef} id="competition-detail2">
+        <div className={styles.competitionDetail2Container}>
           <div className={styles.title} ref={addChildRef(4)}>
             TOMPED SPECTACLE DESIGN COMPETITION
           </div>
@@ -266,7 +269,7 @@ export default function Home() {
           </div>
         </div>
         <a className={styles.downArrow} href='#requirements' ref={addChildRef(4)}><DownArrowSVG /></a>
-      </div>
+      </section>
       <section className={styles.section+" "+styles.setRequirementSectionMinHeight} ref={addSectionRef} id="requirements">
         <a className={styles.downArrow} href='#apply' ref={addChildRef(5)}><DownArrowSVG /></a>
         <div className={styles.requirementsContainer}>
@@ -283,7 +286,7 @@ export default function Home() {
           </div>
           <div className={`${styles.requirements} ${styles.hidden}`} ref={addChildRef(5)}>
             <div className={styles.title}>접수 요건</div>
-            <div className={styles.titleDescription}>참가자의 출품작은 오로지 참가자로 인해 <br /> 창작된 독창적인 작품이어야 합니다.</div>
+            <div className={styles.titleDescription}>참가자의 출품작은 오로지 참가자로 인해 {shouldTitleDescriptionBreakLine && <br />} 창작된 독창적인 작품이어야 합니다.</div>
             <div className={styles.subtitle}>모든 참가자는 다음 정보를 제공해야 합니다. </div>
             <ul className={styles.description}>
               <li>참가자와 보호자의 신상정보</li>

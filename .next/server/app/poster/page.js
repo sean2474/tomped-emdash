@@ -237,7 +237,7 @@ __webpack_require__.r(__webpack_exports__);
         'poster',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9641)), "/Users/sean2474/Desktop/tomped-emdash/src/app/poster/page.tsx"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3455)), "/Users/sean2474/Desktop/tomped-emdash/src/app/poster/page.tsx"],
           
         }]
       },
@@ -290,14 +290,63 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 5910:
+/***/ 5172:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 3380, 23))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9542))
 
 /***/ }),
 
-/***/ 7219:
+/***/ 9542:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Home)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6786);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2451);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _page_module_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2707);
+/* harmony import */ var _page_module_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_page_module_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_button_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2581);
+/* __next_internal_client_entry_do_not_use__ default auto */ 
+
+
+
+function Home() {
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("main", {
+        className: (_page_module_css__WEBPACK_IMPORTED_MODULE_3___default().main),
+        children: [
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                className: (_page_module_css__WEBPACK_IMPORTED_MODULE_3___default().poster),
+                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_1___default()), {
+                    src: "/images/poster.png",
+                    alt: "poster",
+                    width: 500,
+                    height: 500,
+                    layout: "responsive"
+                })
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                className: (_page_module_css__WEBPACK_IMPORTED_MODULE_3___default().posterButton),
+                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_button_button__WEBPACK_IMPORTED_MODULE_2__/* .Button */ .z, {
+                    onClick: ()=>{
+                        window.close();
+                    },
+                    children: "되돌아가기"
+                })
+            })
+        ]
+    });
+}
+
+
+/***/ }),
+
+/***/ 2707:
 /***/ ((module) => {
 
 // Exports
@@ -309,98 +358,29 @@ module.exports = {
 
 /***/ }),
 
-/***/ 193:
-/***/ ((module) => {
-
-// Exports
-module.exports = {
-	"button": "button_button__TIoc7",
-	"red": "button_red__Q5Ye3"
-};
-
-
-/***/ }),
-
-/***/ 9641:
+/***/ 3455:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   $$typeof: () => (/* binding */ $$typeof),
+/* harmony export */   __esModule: () => (/* binding */ __esModule),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1363);
 
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ Home)
-});
+const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/Users/sean2474/Desktop/tomped-emdash/src/app/poster/page.tsx`)
 
-// EXTERNAL MODULE: external "next/dist/compiled/react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__(6786);
-// EXTERNAL MODULE: ./node_modules/next/image.js
-var next_image = __webpack_require__(4178);
-var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
-// EXTERNAL MODULE: ./src/app/poster/page.module.css
-var page_module = __webpack_require__(7219);
-var page_module_default = /*#__PURE__*/__webpack_require__.n(page_module);
-// EXTERNAL MODULE: ./src/components/button/button.module.css
-var button_module = __webpack_require__(193);
-var button_module_default = /*#__PURE__*/__webpack_require__.n(button_module);
-;// CONCATENATED MODULE: ./src/components/button/button.tsx
+// Accessing the __esModule property and exporting $$typeof are required here.
+// The __esModule getter forces the proxy target to create the default export
+// and the $$typeof value is for rendering logic to determine if the module
+// is a client boundary.
+const { __esModule, $$typeof } = proxy;
+const __default__ = proxy.default;
 
 
-const Button = ({ children, href, className, onClick, download, target, rel, style })=>{
-    return /*#__PURE__*/ jsx_runtime_.jsx("a", {
-        className: `${(button_module_default()).button} ${className}`,
-        href: href,
-        onClick: onClick,
-        download: download,
-        target: target,
-        rel: rel,
-        style: style,
-        children: children
-    });
-};
-const RedButton = ({ children, href, className, onClick, download, target, rel })=>{
-    return /*#__PURE__*/ _jsx("a", {
-        className: `${styles.red} ${styles.button} ${className}`,
-        href: href,
-        onClick: onClick,
-        download: download,
-        target: target,
-        rel: rel,
-        children: children
-    });
-};
-
-;// CONCATENATED MODULE: ./src/app/poster/page.tsx
-
-
-
-
-function Home() {
-    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("main", {
-        className: (page_module_default()).main,
-        children: [
-            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                className: (page_module_default()).poster,
-                children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
-                    src: "/images/poster.jpg",
-                    alt: "poster",
-                    width: 500,
-                    height: 500,
-                    layout: "responsive"
-                })
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                className: (page_module_default()).posterButton,
-                children: /*#__PURE__*/ jsx_runtime_.jsx(Button, {
-                    href: "/",
-                    children: "되돌아가기"
-                })
-            })
-        ]
-    });
-}
-
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__default__);
 
 /***/ })
 
@@ -411,7 +391,7 @@ function Home() {
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [697,729,91], () => (__webpack_exec__(8653)));
+var __webpack_exports__ = __webpack_require__.X(0, [697,208,577], () => (__webpack_exec__(8653)));
 module.exports = __webpack_exports__;
 
 })();
