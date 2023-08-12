@@ -101,6 +101,10 @@
   }
 }
 
+.competitionExplainSection {
+  min-height: 600px;
+}
+
 .brandExplanation.hidden {
   transform: translateX(50%); 
 }

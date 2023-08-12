@@ -1458,6 +1458,7 @@ module.exports = {
 	"image": "page_image__NPJyO",
 	"p": "page_p___6xkP",
 	"posterButton": "page_posterButton__toU5_",
+	"competitionExplainSection": "page_competitionExplainSection__HWHzt",
 	"brandExplanation": "page_brandExplanation__WitAu",
 	"brandExplanationContainer": "page_brandExplanationContainer__tjGrK",
 	"red": "page_red__7Jbic",
@@ -1531,7 +1532,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [697,208,148,577], () => (__webpack_exec__(1278)));
+var __webpack_exports__ = __webpack_require__.X(0, [697,208,148,645], () => (__webpack_exec__(1278)));
 module.exports = __webpack_exports__;
 
 })();
