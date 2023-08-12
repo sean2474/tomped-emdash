@@ -12,6 +12,14 @@
   transition: all 1s;
 }
 
+.backgroundImage {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  inset: 0;
+  margin: auto;
+}
+
 .title {
   font-size: 2.0rem;
   font-weight: 400;
@@ -24,6 +32,7 @@
 }
 
 .titleSection {
+  min-height: 600px;
   @media screen and (max-width: 470px) {
     min-height: 700px;
   }
@@ -79,7 +88,7 @@
 
 .posterButton {
   position: absolute;
-  bottom: 100px; 
+  bottom: 50px; 
   left: 50%;
   transform: translateX(-50%);
   @media screen and (max-width: 1080px) {
@@ -331,21 +340,6 @@
   margin: 0 20px 0 20px;
   @media screen and (max-width: 720px) {
     margin: 4px 0 0 0;
-  }
-}
-
-.downArrow {
-  position: absolute;
-  left: calc(50% - 20px);
-  bottom: 0;
-  width: 60px;
-  height: 60px;
-  margin: auto;
-  align-items: center;
-  justify-content: center;
-  animation: arrowAnimation 2s linear infinite;
-  @media screen and (max-width: 1080px) {
-    display: none;
   }
 }
 

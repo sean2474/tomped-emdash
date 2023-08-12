@@ -132,9 +132,6 @@ export default function Home() {
           <div className={`${styles.posterButton} ${styles.hidden}`} ref={addChildRef(0)}>
             <Button href='/poster' target="_blank">포스터 보기</Button>
           </div>
-          <a className={styles.downArrow} href='#brand-explain' ref={addChildRef(0)}>
-            <DownArrowSVG />
-          </a>
         </div>
       </section>
       <section className={styles.section} ref={addSectionRef} id="brand-explain"> 
@@ -158,11 +155,17 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <a className={styles.downArrow} href='#competition-explain' ref={addChildRef(1)}>
-          <DownArrowSVG />
-        </a>
       </section>
-      <section className={styles.section} ref={addSectionRef} id="competition-explain">
+      <section className={styles.competitionExplainSection} ref={addSectionRef} id="competition-explain">
+        <div className={styles.backgroundImage}>
+          <Image
+            src="/images/bg/bg2.png"
+            alt="메인 배경 이미지"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="center" 
+          />
+        </div>
         <div className={styles.title} ref={addChildRef(2)}> 
           MPED INT&apos;L ART&DESIGN AWARDS
         </div>
@@ -170,9 +173,6 @@ export default function Home() {
           MPED 국제 아트앤디자인 공모전은 전 세계 학생 아티스트들의 우수함과 독창성을 주목하며 찬양합니다. 예술적 열정과 탐구심 그리고 정진력(精進力)을
           기반으로 한 작품들을 선정하며 이를 국제 무대에 선보일 수 있는 플랫폼을 제공합니다.
         </div>
-          <a className={styles.downArrow} href='#competition-detail1' ref={addChildRef(2)}>
-            <DownArrowSVG />
-          </a>
       </section>
       <section className={styles.section} ref={addSectionRef} id="competition-detail1">
         <div className={styles.itemContainer}>
@@ -205,7 +205,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <a className={styles.downArrow} href='#competition-detail2' ref={addChildRef(3)}><DownArrowSVG /></a>
       </section>
       <section className={`${styles.competitionDetail2Section}`} ref={addSectionRef} id="competition-detail2">
         <div className={styles.competitionDetail2Container}>
@@ -268,10 +267,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <a className={styles.downArrow} href='#requirements' ref={addChildRef(4)}><DownArrowSVG /></a>
       </section>
       <section className={styles.section+" "+styles.setRequirementSectionMinHeight} ref={addSectionRef} id="requirements">
-        <a className={styles.downArrow} href='#apply' ref={addChildRef(5)}><DownArrowSVG /></a>
         <div className={styles.requirementsContainer}>
           <div className={styles.imageGrid}>
             <div className={`${styles.imageContainer} ${styles.hidden}`} ref={addChildRef(5)}><Image src="/images/photo/glass1.png" alt="1" width={gridImageWidth} height={gridImageHeight} /></div>
@@ -361,7 +358,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <a className={`${styles.downArrow} ${styles.hidden}`} href='#judgement' ref={addChildRef(6)}><DownArrowSVG /></a>
         {copySuccess && <div className={styles.copyMessage} style={{ backgroundColor: copySuccess=='Copied to clipboard!'?'green':'red' }}>{copySuccess}</div>}
       </section>
       <section className={styles.section} ref={addSectionRef} id="judgement">
@@ -397,7 +393,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <a className={`${styles.downArrow} ${styles.hidden}`} href='#price' ref={addChildRef(7)}><DownArrowSVG /></a>
       </section>
       <section className={`${styles.section} ${styles.expandedMobileHeight2}`} id="price">
         <div className={styles.pageview}>
