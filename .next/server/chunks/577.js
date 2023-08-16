@@ -1,5 +1,5 @@
-exports.id = 645;
-exports.ids = [645];
+exports.id = 577;
+exports.ids = [577];
 exports.modules = {
 
 /***/ 2676:
@@ -13,7 +13,7 @@ Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_
 
 /***/ }),
 
-/***/ 9116:
+/***/ 6004:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 3380, 23))
@@ -212,7 +212,7 @@ function RootLayout({ children }) {
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("head", {
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("title", {
-                        children: "Tomped"
+                        children: "Welcome to TOMPED!!"
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                         name: "viewport",
