@@ -170,7 +170,10 @@ export default function Home() {
           MPED INT&apos;L ART&DESIGN AWARDS
         </div>
         <div className={styles.description} ref={addChildRef(2)}>
-          MPED 국제 아트앤디자인 공모전은 전 세계 학생 아티스트들의 우수함과 독창성을 주목하며 찬양합니다. 예술적 열정과 탐구심 그리고 정진력(精進力)을
+          MPED 국제 아트앤디자인 공모전은 전 세계 학생 아티스트들의 우수함과 독창성을 주목하며 찬양합니다. 
+        </div>
+        <div className={styles.description} ref={addChildRef(2)}>
+          예술적 열정과 탐구심 그리고 정진력(精進力)을
           기반으로 한 작품들을 선정하며 이를 국제 무대에 선보일 수 있는 플랫폼을 제공합니다.
         </div>
       </section>
@@ -198,7 +201,7 @@ export default function Home() {
           <div className={`${styles.divider} ${styles.hidden}`} ref={addChildRef(3)}></div>
           <div className={`${styles.itemBox} ${styles.hidden}`} ref={addChildRef(3)}>
             <div className={styles.title}> 
-              공모 주제
+              공모주제
             </div>
             <div className={styles.description}>
               자유주제
@@ -245,7 +248,7 @@ export default function Home() {
                   <Image src="/images/icons/glassicon3.png" alt="icon" width={500} height={500} layout="responsive"></Image>
                 </div>
                 <div className={styles.content}>
-                  <div className={styles.title}>공동 혜택</div>
+                  <div className={styles.title}>공동혜택</div>
                   <ul className={styles.description}>
                     <li>순위발표 [1-12위 까지]</li>
                     <li>심사위원 맞춤 피드백</li>
@@ -345,11 +348,10 @@ export default function Home() {
                   3D: 50,000 KRW 
                 </p>
                 <p> 
-                입금자명: 참가자 성명<br />
-                은행명: Woori Bank/우리은행예금<br />
-                주: EMDASH<br />
-                (주)엠대시 통장 계좌: 1005-404-327510<br />
-                은행 식별 코드: HVBKKRSEXXX<br />
+                  입금자명: 참가자 성명
+                  은행명: 우리은행
+                  예금주: (주)엠대시 
+                  통장계좌번호: 1005-404-327510
                 </p>
               </div>
               <div className={styles.button}>

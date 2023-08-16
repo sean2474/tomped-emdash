@@ -580,7 +580,12 @@ function Home() {
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         className: (page_module_default()).description,
                         ref: addChildRef(2),
-                        children: "MPED 국제 아트앤디자인 공모전은 전 세계 학생 아티스트들의 우수함과 독창성을 주목하며 찬양합니다. 예술적 열정과 탐구심 그리고 정진력(精進力)을 기반으로 한 작품들을 선정하며 이를 국제 무대에 선보일 수 있는 플랫폼을 제공합니다."
+                        children: "MPED 국제 아트앤디자인 공모전은 전 세계 학생 아티스트들의 우수함과 독창성을 주목하며 찬양합니다."
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: (page_module_default()).description,
+                        ref: addChildRef(2),
+                        children: "예술적 열정과 탐구심 그리고 정진력(精進力)을 기반으로 한 작품들을 선정하며 이를 국제 무대에 선보일 수 있는 플랫폼을 제공합니다."
                     })
                 ]
             }),
@@ -641,7 +646,7 @@ function Home() {
                             children: [
                                 /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                     className: (page_module_default()).title,
-                                    children: "공모 주제"
+                                    children: "공모주제"
                                 }),
                                 /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                     className: (page_module_default()).description,
@@ -769,7 +774,7 @@ function Home() {
                                             children: [
                                                 /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                     className: (page_module_default()).title,
-                                                    children: "공동 혜택"
+                                                    children: "공동혜택"
                                                 }),
                                                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
                                                     className: (page_module_default()).description,
@@ -1106,19 +1111,8 @@ function Home() {
                                                             "3D: 50,000 KRW"
                                                         ]
                                                     }),
-                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
-                                                        children: [
-                                                            "입금자명: 참가자 성명",
-                                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
-                                                            "은행명: Woori Bank/우리은행예금",
-                                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
-                                                            "주: EMDASH",
-                                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
-                                                            "(주)엠대시 통장 계좌: 1005-404-327510",
-                                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
-                                                            "은행 식별 코드: HVBKKRSEXXX",
-                                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {})
-                                                        ]
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                        children: "입금자명: 참가자 성명 은행명: 우리은행 예금주: (주)엠대시 통장계좌번호: 1005-404-327510"
                                                     })
                                                 ]
                                             }),
