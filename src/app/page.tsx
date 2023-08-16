@@ -360,7 +360,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {copySuccess && <div className={styles.copyMessage} style={{ backgroundColor: copySuccess=='Copied to clipboard!'?'green':'red' }}>{copySuccess}</div>}
       </section>
       <section className={styles.section} ref={addSectionRef} id="judgement">
         <div className={styles.judgement}>

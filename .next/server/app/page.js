@@ -997,146 +997,137 @@ function Home() {
                     ]
                 })
             }),
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
+            /*#__PURE__*/ jsx_runtime_.jsx("section", {
                 className: (page_module_default()).section,
                 ref: addSectionRef,
                 id: "apply",
-                children: [
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                        className: (page_module_default()).receptionDescriptionContainer,
-                        children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: (page_module_default()).title + " " + (page_module_default()).hidden,
-                                ref: addChildRef(6),
-                                children: "접수 방법"
-                            }),
-                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: (page_module_default()).descriptions,
-                                children: [
-                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                        className: (page_module_default()).itemBox + " " + (page_module_default()).hidden,
-                                        ref: addChildRef(6),
-                                        children: [
-                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                className: (page_module_default()).subtitle,
-                                                children: "1. 신청서 다운로드"
-                                            }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                className: (page_module_default()).description,
-                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
-                                                    children: [
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("b", {
-                                                            children: " 필요한 정보 "
-                                                        }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                            children: "참가자 성명 및 이메일"
-                                                        }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                            children: "참가자 생년월일"
-                                                        }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                            children: "보호자 성명 및 이메일"
-                                                        }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                            children: "보호자 전화번호"
-                                                        }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                            children: "주소 (선택사항)"
-                                                        }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                            children: "학교 이름 (해당시)"
-                                                        }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                            children: "학년 및 졸업 년도"
-                                                        }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                            children: "참가 부문"
-                                                        })
-                                                    ]
-                                                })
-                                            }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                className: (page_module_default()).button,
-                                                children: /*#__PURE__*/ jsx_runtime_.jsx(button_button/* Button */.z, {
-                                                    href: "/file/TOMPED 안경테 디자인 공모전 신청서 FV.docx",
-                                                    download: "TOMPED 안경테 디자인 공모전 신청서 FV.docx",
-                                                    children: " 다운로드 "
-                                                })
-                                            })
-                                        ]
-                                    }),
-                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                        className: (page_module_default()).itemBox + " " + (page_module_default()).hidden,
-                                        ref: addChildRef(6),
-                                        children: [
-                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                className: (page_module_default()).subtitle,
-                                                children: "2. 신청서 제출"
-                                            }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                className: (page_module_default()).description,
-                                                children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                    children: "참가자는 참가 분야를 선택한 후 접수 요건에 맞게 작품을 제출해야 합니다."
-                                                })
-                                            }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                className: (page_module_default()).button,
-                                                children: /*#__PURE__*/ jsx_runtime_.jsx(button_button/* Button */.z, {
-                                                    href: "https://www.emdash.one/enter-tomped",
-                                                    target: "_blank",
-                                                    rel: "noopener noreferrer",
-                                                    children: " 제출 "
-                                                })
-                                            })
-                                        ]
-                                    }),
-                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                        className: (page_module_default()).itemBox + " " + (page_module_default()).hidden,
-                                        ref: addChildRef(6),
-                                        children: [
-                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                className: (page_module_default()).subtitle,
-                                                children: " 3. 출전비 납부 "
-                                            }),
-                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                                className: (page_module_default()).description,
+                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                    className: (page_module_default()).receptionDescriptionContainer,
+                    children: [
+                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                            className: (page_module_default()).title + " " + (page_module_default()).hidden,
+                            ref: addChildRef(6),
+                            children: "접수 방법"
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                            className: (page_module_default()).descriptions,
+                            children: [
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                    className: (page_module_default()).itemBox + " " + (page_module_default()).hidden,
+                                    ref: addChildRef(6),
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                            className: (page_module_default()).subtitle,
+                                            children: "1. 신청서 다운로드"
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                            className: (page_module_default()).description,
+                                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
                                                 children: [
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                        children: "복수 제출의 경우, 각 작품 당 별도의 신청서를 작성해야 하며, 참가비 또한 개별적으로 지불해야 합니다."
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("b", {
+                                                        children: " 필요한 정보 "
                                                     }),
-                                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
-                                                        children: [
-                                                            "2D: 25,000 KRW ",
-                                                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
-                                                            "3D: 50,000 KRW"
-                                                        ]
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                        children: "참가자 성명 및 이메일"
                                                     }),
-                                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                        children: "입금자명: 참가자 성명 은행명: 우리은행 예금주: (주)엠대시 통장계좌번호: 1005-404-327510"
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                        children: "참가자 생년월일"
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                        children: "보호자 성명 및 이메일"
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                        children: "보호자 전화번호"
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                        children: "주소 (선택사항)"
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                        children: "학교 이름 (해당시)"
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                        children: "학년 및 졸업 년도"
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                        children: "참가 부문"
                                                     })
                                                 ]
-                                            }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                className: (page_module_default()).button,
-                                                children: /*#__PURE__*/ jsx_runtime_.jsx(button_button/* Button */.z, {
-                                                    onClick: handleCopy,
-                                                    children: " 계좌복사 "
-                                                })
                                             })
-                                        ]
-                                    })
-                                ]
-                            })
-                        ]
-                    }),
-                    copySuccess && /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: (page_module_default()).copyMessage,
-                        style: {
-                            backgroundColor: copySuccess == "Copied to clipboard!" ? "green" : "red"
-                        },
-                        children: copySuccess
-                    })
-                ]
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                            className: (page_module_default()).button,
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx(button_button/* Button */.z, {
+                                                href: "/file/TOMPED 안경테 디자인 공모전 신청서 FV.docx",
+                                                download: "TOMPED 안경테 디자인 공모전 신청서 FV.docx",
+                                                children: " 다운로드 "
+                                            })
+                                        })
+                                    ]
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                    className: (page_module_default()).itemBox + " " + (page_module_default()).hidden,
+                                    ref: addChildRef(6),
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                            className: (page_module_default()).subtitle,
+                                            children: "2. 신청서 제출"
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                            className: (page_module_default()).description,
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                children: "참가자는 참가 분야를 선택한 후 접수 요건에 맞게 작품을 제출해야 합니다."
+                                            })
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                            className: (page_module_default()).button,
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx(button_button/* Button */.z, {
+                                                href: "https://www.emdash.one/enter-tomped",
+                                                target: "_blank",
+                                                rel: "noopener noreferrer",
+                                                children: " 제출 "
+                                            })
+                                        })
+                                    ]
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                    className: (page_module_default()).itemBox + " " + (page_module_default()).hidden,
+                                    ref: addChildRef(6),
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                            className: (page_module_default()).subtitle,
+                                            children: " 3. 출전비 납부 "
+                                        }),
+                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                            className: (page_module_default()).description,
+                                            children: [
+                                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                    children: "복수 제출의 경우, 각 작품 당 별도의 신청서를 작성해야 하며, 참가비 또한 개별적으로 지불해야 합니다."
+                                                }),
+                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                                                    children: [
+                                                        "2D: 25,000 KRW ",
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                                        "3D: 50,000 KRW"
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                    children: "입금자명: 참가자 성명 은행명: 우리은행 예금주: (주)엠대시 통장계좌번호: 1005-404-327510"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                            className: (page_module_default()).button,
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx(button_button/* Button */.z, {
+                                                onClick: handleCopy,
+                                                children: " 계좌복사 "
+                                            })
+                                        })
+                                    ]
+                                })
+                            ]
+                        })
+                    ]
+                })
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("section", {
                 className: (page_module_default()).section,
@@ -1475,7 +1466,6 @@ module.exports = {
 	"subtitle": "page_subtitle__iAJUg",
 	"receptionDescriptionContainer": "page_receptionDescriptionContainer__C8Kds",
 	"descriptions": "page_descriptions__fan43",
-	"copyMessage": "page_copyMessage__kB9WR",
 	"judgement": "page_judgement__42ROp",
 	"container": "page_container__aoG4z",
 	"prize": "page_prize__K8b0N",
