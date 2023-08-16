@@ -1110,8 +1110,16 @@ function Home() {
                                                         "3D: 50,000 KRW"
                                                     ]
                                                 }),
-                                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                    children: "입금자명: 참가자 성명 은행명: 우리은행 예금주: (주)엠대시 통장계좌번호: 1005-404-327510"
+                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                                                    children: [
+                                                        "입금자명: 참가자 성명 ",
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                                        "은행명: 우리은행 ",
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                                        "예금주: (주)엠대시 ",
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                                        "통장계좌번호: 1005-404-327510"
+                                                    ]
                                                 })
                                             ]
                                         }),

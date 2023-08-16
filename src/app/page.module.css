@@ -533,7 +533,7 @@
 }
 
 .receptionDescriptionContainer .descriptions .itemBox {
-  min-width: 324px;
+  width: 324px;
   display: flex;
   flex-direction: column;
   @media screen and (max-width: 1000px) { 
