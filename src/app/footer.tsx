@@ -10,8 +10,8 @@ export default function Footer() {
           Organizing Committee
         </div>
         <div className={styles.footer3}>
-          W: https://mped.emdash.one <br />
-          W: https://www.tomglass.co.kr/ <br />
+          W: <a href='https://tomped.emdash.one/'> https://tomped.emdash.one/ </a> <br />
+          W: <a href='https://www.tomglass.co.kr/' target='_blank'> https://www.tomglass.co.kr/ </a><br />
           E: mped@emdash.one <br />
           T: +82.2.553.5795 / 070.7007.2257 <br />
         </div>

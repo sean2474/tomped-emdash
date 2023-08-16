@@ -646,12 +646,7 @@
   transition-delay: 200ms;
 }
 
-.expandedMobileHeight2 {
-  height: 110vh;
-  @media screen and (max-width: 1080px) {
-    height: 120vh;
-  }
-  min-height: 900px;
+.prize {
   @media screen and (max-width: 1000px) {
     min-height: 1760px;
   }
@@ -667,15 +662,13 @@
 
 .pageview {
   display: flex;
-  margin: 0 0 50px 0;
+  margin: auto;
   padding: 24px;
   justify-content: space-between;
-  margin-left: 100px;
   width: 100%;
   overflow-x: scroll;
   overflow-y: hidden;
   justify-self: unset;
-
   scroll-snap-type: x mandatory;
   @media screen and (max-width: 1000px) {
     justify-content: start;
@@ -692,17 +685,6 @@
   display: none;
 }
 
-.examplebutton {
-  display: block;
-  margin: 20px auto;
-  width: 100%;
-  @media screen and (max-width: 600px) {
-    display: flex;
-    justify-content: center;
-    margin: 10px auto auto auto;
-    width: 100%;
-  }
-}
 .pageview .pageContainer {
   display: flex;
   flex-direction: column;
@@ -711,20 +693,22 @@
   align-items: center;
   padding: 40px 0 40px 0;
   margin: 0 100px;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   @media screen and (max-width: 1000px) {
-    justify-content: start;
     width: 100%;
   }
 }
 
 .pageview .pageContainer .titleContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 40px 0 40px;
   margin: 0 0 40px 0;
+  @media screen and (min-width: 1000px) {
+    min-height: 650px;
+  }
   @media screen and (max-width: 1000px) {
     margin: auto;
     display: flex;
@@ -735,7 +719,6 @@
 
 .pageview .pageContainer .titleContainer .imageContainer {
   width: 540px;
-  margin: 0;
   @media screen and (max-width: 720px) {
     width: 100%;
   }
@@ -745,16 +728,11 @@
 }
 
 .pageview .pageContainer .titleContainer .title {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 700;
   margin: 0 0 24px 0;
-  transform: rotate(90deg) translate(0, 300%);
   @media screen and (max-width: 1000px) {
-    transform: none;
-    font-size: 5vw;
-  }
-  @media screen and (max-width: 1000px) {
-    transform: 1.4rem;
+    font-size: 1.4rem;
   }
   @media screen and (max-width: 320px) {
     font-size: 1.2rem;
@@ -766,14 +744,15 @@
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  margin: auto;
+  margin: 10px auto auto auto;
   padding: 0 40px 0 40px;
   @media screen and (max-width: 1000px) {
+    margin: auto;
     align-items: space-between;
   }
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 940px) {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     width: 80%;
     padding: 0;
     margin: auto;
@@ -785,10 +764,11 @@
   line-height: 1.75;
   margin: 0;
   width: 450px;
+  text-align: center;
+  justify-content: center;
   @media screen and (max-width: 1000px) {
-    display: block;
-    text-align: start;
-    width: 100%;
+    margin: auto;
+    display: flex;
     padding: 10px;
   }
 }
@@ -799,10 +779,12 @@
   flex-direction: column;
   list-style-position: inside;
   list-style-type: decimal;
+  max-width: 450px;
   text-indent: -18px;
   @media screen and (max-width: 1000px) {
     display: block;
-    padding-right: 20px;
+    padding: 0 20px;
+    text-indent: 0px;
     margin: 14px auto 24px auto;
   }
    @media screen and (max-width: 720px) {
@@ -813,6 +795,15 @@
     text-indent: 0;
     width: 100%;
     padding: 10px; 
+  }
+}
+
+.examplebutton {
+  display: flex;
+  margin: 20px auto;
+  justify-content: center;
+  @media screen and (max-width: 600px) {
+    margin: 10px auto auto auto;
   }
 }
 

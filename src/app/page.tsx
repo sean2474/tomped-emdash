@@ -30,7 +30,7 @@ export default function Home() {
   }
 
   const checkBenefit = () => {
-    location.href = '#price'
+    location.href = '#prize'
   }
   const checkJudgeCiteria = () => {
     location.href = '#judgement'
@@ -251,7 +251,7 @@ export default function Home() {
                     <li>심사위원 맞춤 피드백</li>
                     <li>출품 디자인 맞춤 제작 머그컵</li>
                   </ul>
-                  <a onClick={checkBenefit}>혜텍 확인하기</a>
+                  <a onClick={checkBenefit}>혜택 확인하기</a>
                 </div>
               </div>
           </div>
@@ -394,15 +394,15 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className={`${styles.section} ${styles.expandedMobileHeight2}`} id="price">
+      <section className={`${styles.prize}`} id="prize">
         <div className={styles.pageview}>
           <div className={styles.pageContainer}>
             <div className={`${styles.titleContainer}`}>
-              <div className={styles.imageContainer}>
-                <Image src="/images/price/top3price.png" alt="1" width={500} height={500} layout="responsive"></Image>
-              </div>
               <div className={styles.title}>
                   Top 1-3 ICOSA 아이코사 상
+              </div>
+              <div className={styles.imageContainer}>
+                <Image src="/images/prize/top3prize.png" alt="1" width={500} height={500} layout="responsive"></Image>
               </div>
             </div>
             <div className={`${styles.descriptionContainer}`}>
@@ -416,9 +416,6 @@ export default function Home() {
                   <li>ICOSA 상장</li>
                   <li>각 수상자에게 톰글래스 스토어에서 원하는 제품 1개 증정</li>
                   <li>출품된 디자인이 입혀진 머그컵 증정 [by Conteenew]</li>
-                  <div className={styles.examplebutton}>
-                    <Button href='https://vrin.co.kr/guide/ko' target="_blank" rel="noopener noreferrer" style={{width: 230}}>&nbsp;3D 이미지 예시 (VRIN)</Button>
-                  </div>
                 </ul>
               </div>
               <div className={styles.descriptionBox}>
@@ -433,17 +430,20 @@ export default function Home() {
                   <li>3D 프로토타입 모델 제작 </li>
                   <li>Rebuilder AI에서 3D 이미지화</li>
                   <li>TOM GLASS에서 수상작을 상품화하는 경우 소정의 소유권 이전 대금 지급 </li>
+                  <div className={styles.examplebutton}>
+                    <Button href='https://vrin.co.kr/guide/ko' target="_blank" rel="noopener noreferrer" style={{width: 230}}>&nbsp;3D 이미지 예시 (VRIN)</Button>
+                  </div>
                 </ul>
               </div>
             </div>
           </div>
           <div className={styles.pageContainer}>
             <div className={`${styles.titleContainer}`}>
-              <div className={styles.imageContainer}>
-                <Image src="/images/price/top12price.png" alt="1" width={500} height={500} layout="responsive"></Image>
-              </div>
               <div className={styles.title}>
                   Top 4-12 OCTA 옥타 상
+              </div>
+              <div className={styles.imageContainer}>
+                <Image src="/images/prize/top12prize.png" alt="1" width={500} height={500} layout="responsive"></Image>
               </div>
             </div>
             <div className={`${styles.descriptionContainer}`}>

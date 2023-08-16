@@ -137,9 +137,19 @@ function Footer() {
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                         className: (footer_module_default()).footer3,
                         children: [
-                            "W: https://mped.emdash.one ",
+                            "W: ",
+                            /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                href: "https://tomped.emdash.one/",
+                                children: " https://tomped.emdash.one/ "
+                            }),
+                            " ",
                             /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
-                            "W: https://www.tomglass.co.kr/ ",
+                            "W: ",
+                            /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                href: "https://www.tomglass.co.kr/",
+                                target: "_blank",
+                                children: " https://www.tomglass.co.kr/ "
+                            }),
                             /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
                             "E: mped@emdash.one ",
                             /*#__PURE__*/ jsx_runtime_.jsx("br", {}),

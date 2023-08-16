@@ -360,7 +360,7 @@ function Home() {
         }
     };
     const checkBenefit = ()=>{
-        location.href = "#price";
+        location.href = "#prize";
     };
     const checkJudgeCiteria = ()=>{
         location.href = "#judgement";
@@ -787,7 +787,7 @@ function Home() {
                                                 }),
                                                 /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                                     onClick: checkBenefit,
-                                                    children: "혜텍 확인하기"
+                                                    children: "혜택 확인하기"
                                                 })
                                             ]
                                         })
@@ -1224,8 +1224,8 @@ function Home() {
                 })
             }),
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
-                className: `${(page_module_default()).section} ${(page_module_default()).expandedMobileHeight2}`,
-                id: "price",
+                className: `${(page_module_default()).prize}`,
+                id: "prize",
                 children: [
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                         className: (page_module_default()).pageview,
@@ -1237,18 +1237,18 @@ function Home() {
                                         className: `${(page_module_default()).titleContainer}`,
                                         children: [
                                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: (page_module_default()).title,
+                                                children: "Top 1-3 ICOSA 아이코사 상"
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                 className: (page_module_default()).imageContainer,
                                                 children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
-                                                    src: "/images/price/top3price.png",
+                                                    src: "/images/prize/top3prize.png",
                                                     alt: "1",
                                                     width: 500,
                                                     height: 500,
                                                     layout: "responsive"
                                                 })
-                                            }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                className: (page_module_default()).title,
-                                                children: "Top 1-3 ICOSA 아이코사 상"
                                             })
                                         ]
                                     }),
@@ -1279,18 +1279,6 @@ function Home() {
                                                             }),
                                                             /*#__PURE__*/ jsx_runtime_.jsx("li", {
                                                                 children: "출품된 디자인이 입혀진 머그컵 증정 [by Conteenew]"
-                                                            }),
-                                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                                className: (page_module_default()).examplebutton,
-                                                                children: /*#__PURE__*/ jsx_runtime_.jsx(button_button/* Button */.z, {
-                                                                    href: "https://vrin.co.kr/guide/ko",
-                                                                    target: "_blank",
-                                                                    rel: "noopener noreferrer",
-                                                                    style: {
-                                                                        width: 230
-                                                                    },
-                                                                    children: "\xa03D 이미지 예시 (VRIN)"
-                                                                })
                                                             })
                                                         ]
                                                     })
@@ -1326,6 +1314,18 @@ function Home() {
                                                             }),
                                                             /*#__PURE__*/ jsx_runtime_.jsx("li", {
                                                                 children: "TOM GLASS에서 수상작을 상품화하는 경우 소정의 소유권 이전 대금 지급 "
+                                                            }),
+                                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                                className: (page_module_default()).examplebutton,
+                                                                children: /*#__PURE__*/ jsx_runtime_.jsx(button_button/* Button */.z, {
+                                                                    href: "https://vrin.co.kr/guide/ko",
+                                                                    target: "_blank",
+                                                                    rel: "noopener noreferrer",
+                                                                    style: {
+                                                                        width: 230
+                                                                    },
+                                                                    children: "\xa03D 이미지 예시 (VRIN)"
+                                                                })
                                                             })
                                                         ]
                                                     })
@@ -1342,18 +1342,18 @@ function Home() {
                                         className: `${(page_module_default()).titleContainer}`,
                                         children: [
                                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: (page_module_default()).title,
+                                                children: "Top 4-12 OCTA 옥타 상"
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                 className: (page_module_default()).imageContainer,
                                                 children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
-                                                    src: "/images/price/top12price.png",
+                                                    src: "/images/prize/top12prize.png",
                                                     alt: "1",
                                                     width: 500,
                                                     height: 500,
                                                     layout: "responsive"
                                                 })
-                                            }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                className: (page_module_default()).title,
-                                                children: "Top 4-12 OCTA 옥타 상"
                                             })
                                         ]
                                     }),
@@ -1484,13 +1484,13 @@ module.exports = {
 	"copyMessage": "page_copyMessage__kB9WR",
 	"judgement": "page_judgement__42ROp",
 	"container": "page_container__aoG4z",
-	"expandedMobileHeight2": "page_expandedMobileHeight2__C7VgU",
+	"prize": "page_prize__K8b0N",
 	"pageview": "page_pageview__cfCuC",
-	"examplebutton": "page_examplebutton__y0Lxs",
 	"pageContainer": "page_pageContainer___Ajkl",
 	"titleContainer": "page_titleContainer__LkrOz",
 	"descriptionContainer": "page_descriptionContainer__aSuqv",
 	"descriptionBox": "page_descriptionBox__l4EIW",
+	"examplebutton": "page_examplebutton__y0Lxs",
 	"prevButton": "page_prevButton__NK8cd",
 	"nextButton": "page_nextButton__ACJeB",
 	"arrowAnimation": "page_arrowAnimation__6jvMa"
