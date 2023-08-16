@@ -136,10 +136,10 @@ export default function Home() {
       </section>
       <section className={styles.section} ref={addSectionRef} id="brand-explain"> 
         <div className={styles.brandExplanationContainer}>
-          <div className={styles.image} ref={addChildRef(1)}>
+          <div className={styles.image}>
             <Image src="/images/icons/main-icon.png" alt="poster" width={500} height={500} layout="responsive"></Image>
           </div>
-          <div className={styles.brandExplanation} ref={addChildRef(1)}>
+          <div className={styles.brandExplanation+" "+styles.hidden} ref={addChildRef(1)}>
             <div className={styles.p}>
               <p>어려운 시기에도 자신만의 길을 찾아내어 살아가는 사람</p>
               <p>다른 사람의 기준보다 내 자신의 기준이 중요한 사람 </p>
@@ -188,7 +188,7 @@ export default function Home() {
               [대학부] 대1 — 대4
             </div>
           </div>
-          <div className={`${styles.divider} ${styles.hidden}`} ref={addChildRef(3)}></div>
+          <div className={`${styles.divider}`}></div>
           <div className={`${styles.itemBox} ${styles.hidden}`} ref={addChildRef(3)}>
             <div className={styles.title}> 
               공모분야
@@ -198,7 +198,7 @@ export default function Home() {
               3D
             </div>
           </div>
-          <div className={`${styles.divider} ${styles.hidden}`} ref={addChildRef(3)}></div>
+          <div className={`${styles.divider}`}></div>
           <div className={`${styles.itemBox} ${styles.hidden}`} ref={addChildRef(3)}>
             <div className={styles.title}> 
               공모주제
@@ -271,7 +271,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className={styles.section+" "+styles.setRequirementSectionMinHeight} ref={addSectionRef} id="requirements">
+      <section ref={addSectionRef} id="requirements">
         <div className={styles.requirementsContainer}>
           <div className={styles.imageGrid}>
             <div className={`${styles.imageContainer} ${styles.hidden}`} ref={addChildRef(5)}><Image src="/images/photo/glass1.png" alt="1" width={gridImageWidth} height={gridImageHeight} /></div>
@@ -395,7 +395,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className={`${styles.prize}`} id="prize">
+      <section className={`${styles.prize}`} id="prize" >
         <div className={styles.pageview}>
           <div className={styles.pageContainer}>
             <div className={`${styles.titleContainer}`}>
@@ -431,10 +431,10 @@ export default function Home() {
                   <li>3D 프로토타입 모델 제작 </li>
                   <li>Rebuilder AI에서 3D 이미지화</li>
                   <li>TOM GLASS에서 수상작을 상품화하는 경우 소정의 소유권 이전 대금 지급 </li>
-                  <div className={styles.examplebutton}>
-                    <Button href='https://vrin.co.kr/guide/ko' target="_blank" rel="noopener noreferrer" style={{width: 230}}>&nbsp;3D 이미지 예시 (VRIN)</Button>
-                  </div>
                 </ul>
+                <div className={styles.examplebutton}>
+                  <Button href='https://vrin.co.kr/guide/ko' target="_blank" rel="noopener noreferrer" style={{width: 230}}>&nbsp;3D 이미지 예시 (VRIN)</Button>
+                </div>
               </div>
             </div>
           </div>

@@ -502,7 +502,6 @@ function Home() {
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx("div", {
                             className: (page_module_default()).image,
-                            ref: addChildRef(1),
                             children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
                                 src: "/images/icons/main-icon.png",
                                 alt: "poster",
@@ -512,7 +511,7 @@ function Home() {
                             })
                         }),
                         /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                            className: (page_module_default()).brandExplanation,
+                            className: (page_module_default()).brandExplanation + " " + (page_module_default()).hidden,
                             ref: addChildRef(1),
                             children: [
                                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
@@ -615,8 +614,7 @@ function Home() {
                             ]
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            className: `${(page_module_default()).divider} ${(page_module_default()).hidden}`,
-                            ref: addChildRef(3)
+                            className: `${(page_module_default()).divider}`
                         }),
                         /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                             className: `${(page_module_default()).itemBox} ${(page_module_default()).hidden}`,
@@ -637,8 +635,7 @@ function Home() {
                             ]
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            className: `${(page_module_default()).divider} ${(page_module_default()).hidden}`,
-                            ref: addChildRef(3)
+                            className: `${(page_module_default()).divider}`
                         }),
                         /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                             className: `${(page_module_default()).itemBox} ${(page_module_default()).hidden}`,
@@ -836,7 +833,6 @@ function Home() {
                 })
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("section", {
-                className: (page_module_default()).section + " " + (page_module_default()).setRequirementSectionMinHeight,
                 ref: addSectionRef,
                 id: "requirements",
                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
@@ -1307,20 +1303,20 @@ function Home() {
                                                             }),
                                                             /*#__PURE__*/ jsx_runtime_.jsx("li", {
                                                                 children: "TOM GLASS에서 수상작을 상품화하는 경우 소정의 소유권 이전 대금 지급 "
-                                                            }),
-                                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                                className: (page_module_default()).examplebutton,
-                                                                children: /*#__PURE__*/ jsx_runtime_.jsx(button_button/* Button */.z, {
-                                                                    href: "https://vrin.co.kr/guide/ko",
-                                                                    target: "_blank",
-                                                                    rel: "noopener noreferrer",
-                                                                    style: {
-                                                                        width: 230
-                                                                    },
-                                                                    children: "\xa03D 이미지 예시 (VRIN)"
-                                                                })
                                                             })
                                                         ]
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                        className: (page_module_default()).examplebutton,
+                                                        children: /*#__PURE__*/ jsx_runtime_.jsx(button_button/* Button */.z, {
+                                                            href: "https://vrin.co.kr/guide/ko",
+                                                            target: "_blank",
+                                                            rel: "noopener noreferrer",
+                                                            style: {
+                                                                width: 230
+                                                            },
+                                                            children: "\xa03D 이미지 예시 (VRIN)"
+                                                        })
                                                     })
                                                 ]
                                             })
