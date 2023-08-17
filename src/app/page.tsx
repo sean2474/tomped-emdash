@@ -115,10 +115,10 @@ export default function Home() {
     <main className={styles.main}>
       <section className={`${styles.titleSection}`} ref={addSectionRef} id="title">
         <div className={styles.imagesContainer}>
-          <div className={`${styles.image} ${styles.hidden}`} ref={addChildRef(0)}>
+          <div className={`${styles.image}`} ref={addChildRef(0)}>
             <Image src="/images/content-1.jpg" alt="poster" width={500} height={500} layout="responsive"></Image>
           </div>
-          <div className={`${styles.image} ${styles.hidden}`} ref={addChildRef(0)}>
+          <div className={`${styles.image}`} ref={addChildRef(0)}>
             <div className={styles.title}>
               TOMPED
             </div>
@@ -126,10 +126,10 @@ export default function Home() {
               TOM GLASS  및 EMDASH 사가 주최하는 TOMPED 국제 공모전은 고등학생 및 대학생들을 위해 TOM GLASS 임원진들을 필두로 우수한 작품들을 선발하고 이에 대한 심사평을 제공하는 대회입니다. 
             </div>
           </div>
-          <div className={`${styles.image} ${styles.hidden}`} ref={addChildRef(0)}>
+          <div className={`${styles.image}`} ref={addChildRef(0)}>
             <Image src="/images/content-2.jpg" alt="poster" width={500} height={500} layout="responsive"></Image>
           </div>
-          <div className={`${styles.posterButton} ${styles.hidden}`} ref={addChildRef(0)}>
+          <div className={`${styles.posterButton}`} ref={addChildRef(0)}>
             <Button href='/poster' target="_blank">포스터 보기</Button>
           </div>
         </div>

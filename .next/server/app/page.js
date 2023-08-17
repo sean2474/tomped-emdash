@@ -281,6 +281,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ 9342:
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 2987, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 831, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 4282, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6926, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 1232, 23))
+
+/***/ }),
+
 /***/ 800:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -446,7 +457,7 @@ function Home() {
                     className: (page_module_default()).imagesContainer,
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            className: `${(page_module_default()).image} ${(page_module_default()).hidden}`,
+                            className: `${(page_module_default()).image}`,
                             ref: addChildRef(0),
                             children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
                                 src: "/images/content-1.jpg",
@@ -457,7 +468,7 @@ function Home() {
                             })
                         }),
                         /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                            className: `${(page_module_default()).image} ${(page_module_default()).hidden}`,
+                            className: `${(page_module_default()).image}`,
                             ref: addChildRef(0),
                             children: [
                                 /*#__PURE__*/ jsx_runtime_.jsx("div", {
@@ -471,7 +482,7 @@ function Home() {
                             ]
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            className: `${(page_module_default()).image} ${(page_module_default()).hidden}`,
+                            className: `${(page_module_default()).image}`,
                             ref: addChildRef(0),
                             children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
                                 src: "/images/content-2.jpg",
@@ -482,7 +493,7 @@ function Home() {
                             })
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            className: `${(page_module_default()).posterButton} ${(page_module_default()).hidden}`,
+                            className: `${(page_module_default()).posterButton}`,
                             ref: addChildRef(0),
                             children: /*#__PURE__*/ jsx_runtime_.jsx(button_button/* Button */.z, {
                                 href: "/poster",
@@ -1520,7 +1531,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [697,208,148,577], () => (__webpack_exec__(1278)));
+var __webpack_exports__ = __webpack_require__.X(0, [697,208,148,449], () => (__webpack_exec__(1278)));
 module.exports = __webpack_exports__;
 
 })();

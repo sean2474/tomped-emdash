@@ -32,7 +32,6 @@
 }
 
 .titleSection {
-  /* height: 100vh; */
   min-height: 600px;
   @media screen and (max-width: 470px) {
     min-height: 700px;
