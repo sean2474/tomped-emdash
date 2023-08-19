@@ -804,7 +804,7 @@ function Home() {
                                     className: (page_module_default()).button,
                                     ref: addChildRef(4),
                                     children: /*#__PURE__*/ jsx_runtime_.jsx(button_button/* Button */.z, {
-                                        href: "/file/TOMPED 안경테 디자인 공모전 신청서 FV.docx",
+                                        href: "/file/TOMPED_안경테_디자인_공모전_신청서.docx",
                                         download: "TOMPED 안경테 디자인 공모전 신청서 FV.docx",
                                         children: " 신청서 다운로드 "
                                     })

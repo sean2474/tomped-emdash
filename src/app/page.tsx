@@ -260,7 +260,7 @@ export default function Home() {
           </div>
           <div className={styles.buttonContainer}>
             <div className={styles.button} ref={addChildRef(4)}>
-              <Button href='/file/TOMPED 안경테 디자인 공모전 신청서 FV.docx' download="TOMPED 안경테 디자인 공모전 신청서 FV.docx"> 신청서 다운로드 </Button>
+              <Button href='/file/TOMPED_안경테_디자인_공모전_신청서.docx' download="TOMPED 안경테 디자인 공모전 신청서 FV.docx"> 신청서 다운로드 </Button>
             </div>
             <div className={styles.button} ref={addChildRef(4)}>
               <Button href='https://www.emdash.one/enter-tomped' target="_blank" rel="noopener noreferrer"> 신청서 제출 </Button>
