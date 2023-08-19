@@ -805,7 +805,7 @@ function Home() {
                                     ref: addChildRef(4),
                                     children: /*#__PURE__*/ jsx_runtime_.jsx(button_button/* Button */.z, {
                                         href: "/file/TOMPED_안경테_디자인_공모전_신청서.docx",
-                                        download: "TOMPED 안경테 디자인 공모전 신청서 FV.docx",
+                                        download: "TOMPED_안경테_디자인_공모전_신청서.docx",
                                         children: " 신청서 다운로드 "
                                     })
                                 }),
@@ -1053,8 +1053,8 @@ function Home() {
                                         /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                             className: (page_module_default()).button,
                                             children: /*#__PURE__*/ jsx_runtime_.jsx(button_button/* Button */.z, {
-                                                href: "/file/TOMPED 안경테 디자인 공모전 신청서 FV.docx",
-                                                download: "TOMPED 안경테 디자인 공모전 신청서 FV.docx",
+                                                href: "/file/TOMPED_안경테_디자인_공모전_신청서.docx",
+                                                download: "TOMPED_안경테_디자인_공모전_신청서.docx",
                                                 children: " 다운로드 "
                                             })
                                         })
@@ -1520,7 +1520,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [697,969,148,508], () => (__webpack_exec__(1278)));
+var __webpack_exports__ = __webpack_require__.X(0, [697,969,148,145], () => (__webpack_exec__(1278)));
 module.exports = __webpack_exports__;
 
 })();
