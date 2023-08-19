@@ -1,8 +1,19 @@
-exports.id = 534;
-exports.ids = [534];
+exports.id = 669;
+exports.ids = [669];
 exports.modules = {
 
-/***/ 3900:
+/***/ 2676:
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 1232, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 2987, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 831, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6926, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 4282, 23))
+
+/***/ }),
+
+/***/ 2938:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 3380, 23))
@@ -93,9 +104,9 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: external "next/dist/compiled/react/jsx-runtime"
 var jsx_runtime_ = __webpack_require__(6786);
-// EXTERNAL MODULE: ./node_modules/next/font/google/target.css?{"path":"src/app/layout.tsx","import":"Montserrat","arguments":[{"subsets":["latin"]}],"variableName":"inter"}
-var layout_tsx_import_Montserrat_arguments_subsets_latin_variableName_inter_ = __webpack_require__(2648);
-var layout_tsx_import_Montserrat_arguments_subsets_latin_variableName_inter_default = /*#__PURE__*/__webpack_require__.n(layout_tsx_import_Montserrat_arguments_subsets_latin_variableName_inter_);
+// EXTERNAL MODULE: ./node_modules/next/font/google/target.css?{"path":"src/app/layout.tsx","import":"Ubuntu","arguments":[{"weight":"400","subsets":["latin-ext"]}],"variableName":"inter"}
+var layout_tsx_import_Ubuntu_arguments_weight_400_subsets_latin_ext_variableName_inter_ = __webpack_require__(8240);
+var layout_tsx_import_Ubuntu_arguments_weight_400_subsets_latin_ext_variableName_inter_default = /*#__PURE__*/__webpack_require__.n(layout_tsx_import_Ubuntu_arguments_weight_400_subsets_latin_ext_variableName_inter_);
 // EXTERNAL MODULE: ./src/app/globals.css
 var globals = __webpack_require__(5023);
 // EXTERNAL MODULE: ./src/app/footer.module.css
@@ -186,7 +197,7 @@ function Footer() {
                     "\xa9 2023 TOMPED SPECTACLE DESIGN COMPETITION ",
                     /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
                     /*#__PURE__*/ jsx_runtime_.jsx("i", {
-                        children: "made by Sean Park"
+                        children: "made by Sean Park, AOF 2024"
                     })
                 ]
             })
@@ -220,7 +231,7 @@ function RootLayout({ children }) {
                 ]
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("body", {
-                className: (layout_tsx_import_Montserrat_arguments_subsets_latin_variableName_inter_default()).className,
+                className: (layout_tsx_import_Ubuntu_arguments_weight_400_subsets_latin_ext_variableName_inter_default()).className,
                 children: children
             }),
             /*#__PURE__*/ jsx_runtime_.jsx(Footer, {})

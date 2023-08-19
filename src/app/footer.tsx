@@ -26,7 +26,7 @@ export default function Footer() {
       <Image src="/images/footer/footer_image.png" alt="logo" width={100} height={100} layout="responsive" />
       <div className={styles.footerText}>
         © 2023 TOMPED SPECTACLE DESIGN COMPETITION <br />
-        <i>made by Sean Park</i>
+        <i>made by Sean Park, AOF 2024</i>
       </div>
     </footer>
   )

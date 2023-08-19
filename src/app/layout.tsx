@@ -1,12 +1,14 @@
 import './globals.css'
 import Footer from './footer'
 import type { Metadata } from 'next'
-import { Montserrat } from 'next/font/google'
+import { Ubuntu } from 'next/font/google'
 
-const inter = Montserrat({ subsets: ['latin'] })
+const inter = Ubuntu({
+  weight: "400",
+  subsets: ["latin-ext"],
+})
 
-export const metadata: Metadata = {
-}
+export const metadata: Metadata = { }
 
 export default function RootLayout({
   children,

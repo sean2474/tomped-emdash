@@ -1,14 +1,14 @@
-exports.id = 208;
-exports.ids = [208];
+exports.id = 969;
+exports.ids = [969];
 exports.modules = {
 
-/***/ 2648:
+/***/ 8240:
 /***/ ((module) => {
 
 // Exports
 module.exports = {
-	"style": {"fontFamily":"'__Montserrat_cabfd8', '__Montserrat_Fallback_cabfd8'","fontStyle":"normal"},
-	"className": "__className_cabfd8"
+	"style": {"fontFamily":"'__Ubuntu_328e4e', '__Ubuntu_Fallback_328e4e'","fontWeight":400,"fontStyle":"normal"},
+	"className": "__className_328e4e"
 };
 
 
