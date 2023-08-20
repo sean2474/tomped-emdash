@@ -197,7 +197,7 @@ function Footer() {
                     "\xa9 2023 TOMPED SPECTACLE DESIGN COMPETITION ",
                     /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
                     /*#__PURE__*/ jsx_runtime_.jsx("i", {
-                        children: "made by Sean Park, AOF 2024"
+                        children: "made by Sean Park, Avon Old Farms 2024"
                     })
                 ]
             })
