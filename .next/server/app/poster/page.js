@@ -262,7 +262,7 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6960)), "/Users/sean2474/Desktop/tomped-emdash/src/app/layout.tsx"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1570)), "/Users/sean2474/Desktop/tomped-emdash/src/app/layout.tsx"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3881))).default(props))],
     apple: [],
@@ -399,7 +399,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [697,963,7], () => (__webpack_exec__(8653)));
+var __webpack_exports__ = __webpack_require__.X(0, [697,499,141], () => (__webpack_exec__(8653)));
 module.exports = __webpack_exports__;
 
 })();

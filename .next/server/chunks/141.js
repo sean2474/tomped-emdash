@@ -1,5 +1,5 @@
-exports.id = 7;
-exports.ids = [7];
+exports.id = 141;
+exports.ids = [141];
 exports.modules = {
 
 /***/ 2676:
@@ -13,11 +13,11 @@ Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_
 
 /***/ }),
 
-/***/ 9459:
+/***/ 7208:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 3380, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 2486))
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6173, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 3380, 23))
 
 /***/ }),
 
@@ -62,72 +62,6 @@ const RedButton = ({ children, href, className, onClick, download, target, rel }
 
 /***/ }),
 
-/***/ 2486:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ googleAnalytics)
-});
-
-// EXTERNAL MODULE: external "next/dist/compiled/react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__(6786);
-// EXTERNAL MODULE: ./node_modules/next/script.js
-var script = __webpack_require__(1949);
-var script_default = /*#__PURE__*/__webpack_require__.n(script);
-;// CONCATENATED MODULE: ./src/libs/gtags.ts
-const GA_TRACKING_ID = "G-13MSZV3GMR";
-const pageview = (url)=>{
-    window.gtag("config", GA_TRACKING_ID, {
-        page_path: url
-    });
-};
-// https://developers.google.com/analytics/devguides/collection/gtagjs/events
-const gtags_event = (action, { event_category, event_label, value })=>{
-    window.gtag("event", action, {
-        event_category,
-        event_label,
-        value
-    });
-};
-
-;// CONCATENATED MODULE: ./src/components/googleAnalytics.tsx
-/* __next_internal_client_entry_do_not_use__ default auto */ 
-
-
-const GoogleAnalytics = ()=>{
-    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
-        children: [
-            /*#__PURE__*/ jsx_runtime_.jsx((script_default()), {
-                strategy: "afterInteractive",
-                src: `https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx((script_default()), {
-                id: "gtag-init",
-                strategy: "afterInteractive",
-                dangerouslySetInnerHTML: {
-                    __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '${GA_TRACKING_ID}', {
-              page_path: window.location.pathname,
-              });
-                `
-                }
-            })
-        ]
-    });
-};
-/* harmony default export */ const googleAnalytics = (GoogleAnalytics);
-
-
-/***/ }),
-
 /***/ 7651:
 /***/ ((module) => {
 
@@ -156,7 +90,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 6960:
+/***/ 1570:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -272,21 +206,9 @@ function Footer() {
     });
 }
 
-// EXTERNAL MODULE: ./node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js
-var module_proxy = __webpack_require__(1363);
-;// CONCATENATED MODULE: ./src/components/googleAnalytics.tsx
-
-const proxy = (0,module_proxy.createProxy)(String.raw`/Users/sean2474/Desktop/tomped-emdash/src/components/googleAnalytics.tsx`)
-
-// Accessing the __esModule property and exporting $$typeof are required here.
-// The __esModule getter forces the proxy target to create the default export
-// and the $$typeof value is for rendering logic to determine if the module
-// is a client boundary.
-const { __esModule, $$typeof } = proxy;
-const __default__ = proxy.default;
-
-
-/* harmony default export */ const googleAnalytics = (__default__);
+// EXTERNAL MODULE: ./node_modules/next/script.js
+var script = __webpack_require__(4862);
+var script_default = /*#__PURE__*/__webpack_require__.n(script);
 ;// CONCATENATED MODULE: ./src/app/layout.tsx
 
 
@@ -312,7 +234,21 @@ function RootLayout({ children }) {
                         rel: "icon",
                         href: "/favicon.ico"
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx(googleAnalytics, {})
+                    /*#__PURE__*/ jsx_runtime_.jsx((script_default()), {
+                        async: true,
+                        src: "https://www.googletagmanager.com/gtag/js?id=G-13MSZV3GMR"
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx((script_default()), {
+                        id: "google-analytics",
+                        strategy: "afterInteractive",
+                        children: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-13MSZV3GMR');
+          `
+                    })
                 ]
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("body", {
